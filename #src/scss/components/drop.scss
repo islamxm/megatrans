@@ -1,0 +1,23 @@
+.drop {
+    border-style: dashed !important;
+    border-color: $blue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .dz-message {
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+        line-height: 36px;      
+        color: $text;
+    }
+
+    .dz-error-message {
+        display: none !important;
+    }
+
+    .dz-error-mark {
+
+    }
+}

@@ -1,0 +1,43 @@
+.radio {
+
+    input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        appearance: none;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    label {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+
+        &:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #ECECEC;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+    input:checked ~ label {
+
+        &:after {
+            content: url('../img/radio.svg');
+        }
+    }
+}

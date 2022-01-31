@@ -1,0 +1,174 @@
+@media (max-width: 1200px) {
+    .auth {
+
+
+        &__back {
+
+        }
+
+        &__title {
+            margin-bottom: 77px;
+            font-size: 42px;
+            line-height: 51px;
+        }
+
+        &__ex {
+            margin-bottom: 95px;
+        }
+
+
+        &__info {
+
+        }
+
+        &__col {
+
+
+        }
+
+        &__col.auth__col_left {
+            width: 40%;
+            padding-left: 70px;
+
+            .auth__col_in {
+                padding-left: 0;
+            }
+
+        }
+
+        &__col.auth__col_right {
+            padding-left: 85px;
+            width: 60%;
+
+            .auth__col_in {
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .auth {
+        min-height: unset;
+        flex-direction: column;
+
+        &__col {
+            width: 100% !important;
+
+            &_in {
+                .title {
+                    display: none;
+                }
+            }
+        }
+
+        &__col.auth__col_left {
+            max-width: unset;
+            padding: 15px 25px;
+        }
+
+        &__col.auth__col_right {
+            display: flex;
+            align-items: center;
+            padding: 30px 26px;
+            width: 100%;
+            justify-content: center;
+            flex: 1 0 auto;
+
+
+            .auth__col_in {
+                max-width: 310px;
+                width: 100%;
+            }
+            
+            
+
+        }
+
+        &__form {
+            
+            &_item {
+                width: 100%;
+            }
+
+            &_btn {
+                .button {
+                    width: 100%;
+                }
+            }
+        }
+
+        
+
+        &__title {
+            margin: 0;
+        }
+
+        &__ex {
+            display: none;
+        }
+
+        &__info {
+            display: none;
+        }
+
+        &__col.auth__col_right {
+            margin-top: 0;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .auth {
+
+        &__col {
+            
+        }
+
+        &__title {
+            font-size: 22px;
+            line-height: 27px;
+        }
+
+        &__form {
+
+            font-size: 14px !important;
+            line-height: 17px !important;
+            display: flex;
+            flex-direction: column;
+
+            &_q {
+                flex: 1 0 auto;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                color: #fff;
+                background-color: $blue;
+                text-align: center;
+                padding: 20px 25px;
+                margin: 0;
+
+                a {
+                    display: block;
+                    color: #fff;
+                }
+            }
+        }
+
+        &__col.auth__col_left {
+            height: 101px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        &__col.auth__col_right {
+            padding-bottom: 110px;
+            .auth__col_in {
+                height: 100%;
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,174 @@
+.auth {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    
+    min-height: 100vh;
+
+
+    &__back {
+        
+        position: relative;
+        padding-left: 30px;
+
+        &:after {
+            position: absolute;
+            content: url('../img/auth-back.svg');
+            top: 0;
+            left: 0;
+            
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 62px;
+        line-height: 76px;
+        text-transform: uppercase;
+        font-style: italic;
+        margin-bottom: 88px;
+    }
+
+    &__ex {
+        font-size: 18px;
+        line-height: 25px;
+        max-width: 533px;
+        width: 100%;
+        margin-bottom: 286px;
+        
+    }
+
+    &__info {
+        padding-top: 30px;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 1px;
+            background-color: #fff;
+        }
+        span {
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 23px;
+        }
+
+        a {
+            display: block;
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+
+
+    &__col {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__col.auth__col_left {
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 40px;
+        background: linear-gradient(122.57deg, #1D327B 20.21%, #E30613 100%);
+        color: #fff;
+
+        .auth__col_in {
+            max-width: 761px;
+            width: 100%;
+            padding-left: 15px;
+        }
+    }
+
+    &__col.auth__col_right {
+        justify-content: flex-start;
+        // align-items: center;
+        padding-left: 130px;
+        // margin-top: -100px;
+        
+        .auth__col_in {
+            padding-right: 15px;
+            .title {
+                margin-bottom: 48px;
+            }
+        }
+    }
+
+    &__descr {
+        font-size: 16px;
+        line-height: 25px;
+        max-width: 494px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    &__form {
+        margin-bottom: 44px;
+        &_item.checkbox {
+
+            label {
+                font-size: 14px;
+                line-height: 17px;
+                a {
+                    color: $blue;
+                    text-decoration: underline;
+                }
+            }
+        }
+        &_item {
+            width: 403px;
+            margin-bottom: 30px;
+            
+            input {
+                width: 100%;
+            }
+
+            &_head {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+
+                .label {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                .ex {
+                    font-size: 14px;
+                    line-height: 25px;
+                    color: blue;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &_btn {
+            
+            .button {
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+        }
+
+        &_q {
+            margin-top: 40px;
+            font-size: 14px;
+            line-height: 25px;
+
+            a {
+                color: blue;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    
+}

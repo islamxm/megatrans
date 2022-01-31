@@ -1,0 +1,11 @@
+// COLORS
+$blue: #1D327B;
+$red: #E30613;
+$text: #2D3134;
+$gray:#ECECEC;
+$dark:#444444;
+
+
+@mixin default-anim {
+    transition: all .3s ease;
+}

@@ -1,0 +1,35 @@
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: $blue;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    @include default-anim;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #142358;
+    }
+}
+
+.button-l {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 39px;
+    background-color: transparent;
+    color: $blue;
+    text-transform: uppercase;
+    border: 1px solid $blue;
+    font-weight: 600;
+    @include default-anim;
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+        background-color: $blue;
+    }
+}

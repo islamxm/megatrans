@@ -1,0 +1,40 @@
+.input {
+
+    input {
+        padding: 13px 14px;
+        display: block;
+        border: 2px solid #ECECEC;
+        background-color: #fff;
+
+        &:valid {
+            background-color: #fff !important;
+        }
+
+        &:invalid {
+            border-color: $red;
+        }
+    }
+
+    &_ex {
+        opacity: 0;
+        visibility: hidden;
+        @include default-anim;
+        pointer-events: none;
+        font-size: 12px;
+        line-height: 16px;
+        color: $red;
+    }
+}
+
+.input.invalid {
+    
+    input {
+        border-color: $red;
+    }
+
+    &_ex {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: none;
+    }
+}

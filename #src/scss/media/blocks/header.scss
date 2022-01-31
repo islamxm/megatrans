@@ -1,0 +1,30 @@
+@media (max-width: 1200px) {
+    .header {
+
+        &__in {
+            padding: 15px 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        position: static;
+
+        &__in {
+            padding: 10px 20px;
+            justify-content: flex-start;
+        }
+
+        &__logo {
+            width: 180px;
+            height: 68px;
+
+            img {
+                max-width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

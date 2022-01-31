@@ -1,0 +1,43 @@
+//LIBS
+
+
+//OVERALL
+@import './main/vars.scss';
+@import './main/global.scss';
+
+
+
+//BLOCKS
+@import './blocks/auth.scss';
+@import './blocks/header.scss';
+@import './blocks/header-menu.scss';
+@import './blocks/aside.scss';
+
+//PAGES
+
+@import './pages/registration.scss';
+@import './pages/backup.scss';
+@import './pages/partners.scss';
+
+
+
+
+//COMPONENTS
+@import './components/button.scss';
+@import './components/input.scss';
+@import './components/title.scss';
+@import './components/checkbox.scss';
+@import './components/modal.scss';
+@import './components/radio.scss';
+@import './components/select.scss';
+@import './components/drop.scss';
+@import './components/partner.scss';
+
+//MEDIA
+@import './media/blocks/auth.scss';
+@import './media/blocks/header.scss';
+
+
+//MODAL 
+@import './modal/partner-add.scss';
+@import './modal/partner-edit.scss';

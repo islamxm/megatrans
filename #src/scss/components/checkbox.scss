@@ -1,0 +1,41 @@
+.checkbox {
+    
+    input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        visibility: hidden;
+        opacity: 0;
+        appearance: none;
+        pointer-events: none;
+    }
+
+    label {
+        position: relative;
+        padding-left: 35px;
+        cursor: pointer;
+        display: block;
+        &:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: calc(50% - 12px);
+            width: 24px;
+            height: 24px;
+            border: 1px solid #F0F0F0;
+            @include default-anim;
+        }
+    }
+
+    input:checked ~ label {
+
+        &:after {
+            background-color: $blue;
+            background-image: url('../img/checkbox.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+}

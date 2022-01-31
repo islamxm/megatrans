@@ -1,0 +1,14 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+
+    &__in {
+
+        padding: 30px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
