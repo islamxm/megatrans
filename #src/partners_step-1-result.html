@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body >
+    <div class="wrapper">
+        @@include('./blocks/header-menu.html')
+        <main class="main main-w">
+            @@include('./blocks/aside.html')
+            <div class="partners" id="partners">
+                <div class="partners__title title">
+                    Мои контрагенты
+                </div>
+                <div class="partners__action">
+                    <button class="partners__action_add button" data-micromodal-trigger="partnerAdd">Добавить</button>
+                </div>
+
+
+                <div class="partners__content">
+                    <!-- <div class="partners__content_info">
+                        Вы пока не добавили контрагентов.
+                    </div> -->
+
+                    <div class="partners__list">
+
+
+                        <div class="partner">
+                            
+                            <div class="partner__pl">
+                                <div class="status status_confirmed">
+                                    Подтвержден
+                                </div>
+                                <div class="partner__pl_title">
+                                    ООО «ЮНИСТРИМ КОМПАНИ»
+                                </div>
+                                <div class="partner__pl_nm">
+                                    123456890 / 123456789
+                                </div>
+                            </div>
+
+                            <div class="partner__values">
+                                <div class="partner__value">
+                                    <div class="partner__value_num">
+                                        13
+                                    </div>
+                                    <div class="partner__value_name">
+                                        партнеры
+                                    </div>
+                                </div>
+                                <div class="partner__value">
+                                    <div class="partner__value_num">
+                                        2
+                                    </div>
+                                    <div class="partner__value_name">
+                                        заказы
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="partner__action">
+                                <div class="partner__action_date">
+                                    25.09.2021
+                                </div>
+                                <button class="partner__action_edit" data-micromodal-trigger="partnerEdit">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.8063 9.25195C24.2788 8.77945 24.5388 8.15195 24.5388 7.48445C24.5388 6.81695 24.2788 6.18945 23.8063 5.71695L21.8237 3.73445C21.3512 3.26195 20.7238 3.00195 20.0563 3.00195C19.3888 3.00195 18.7612 3.26195 18.29 3.7332L5 16.982V22.5007H10.5163L23.8063 9.25195ZM20.0563 5.50195L22.04 7.4832L20.0525 9.4632L18.07 7.48195L20.0563 5.50195ZM7.5 20.0007V18.0195L16.3 9.24695L18.2825 11.2295L9.48375 20.0007H7.5ZM5 25.0007H25V27.5007H5V25.0007Z" fill="#1D327B"/>
+                                        </svg>
+                                        
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="partner">
+                            
+                            <div class="partner__pl">
+                                <div class="status status_notconfirmed">
+                                    не Подтвержден
+                                </div>
+                                <div class="partner__pl_title">
+                                    ТАБУРЕТКИН К. П.
+                                </div>
+                                <div class="partner__pl_nm">
+                                    50 00 / 145678
+                                </div>
+                            </div>
+
+                            <!-- <div class="partner__values">
+                                <div class="partner__value">
+                                    <div class="partner__value_num">
+                                        13
+                                    </div>
+                                    <div class="partner__value_name">
+                                        партнеры
+                                    </div>
+                                </div>
+                                <div class="partner__value">
+                                    <div class="partner__value_num">
+                                        2
+                                    </div>
+                                    <div class="partner__value_name">
+                                        заказы
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <div class="partner__action">
+                                <div class="partner__action_date">
+                                    04.09.2021
+                                </div>
+                                <button class="partner__action_edit" data-micromodal-trigger="partnerEdit">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.8063 9.25195C24.2788 8.77945 24.5388 8.15195 24.5388 7.48445C24.5388 6.81695 24.2788 6.18945 23.8063 5.71695L21.8237 3.73445C21.3512 3.26195 20.7238 3.00195 20.0563 3.00195C19.3888 3.00195 18.7612 3.26195 18.29 3.7332L5 16.982V22.5007H10.5163L23.8063 9.25195ZM20.0563 5.50195L22.04 7.4832L20.0525 9.4632L18.07 7.48195L20.0563 5.50195ZM7.5 20.0007V18.0195L16.3 9.24695L18.2825 11.2295L9.48375 20.0007H7.5ZM5 25.0007H25V27.5007H5V25.0007Z" fill="#1D327B"/>
+                                        </svg>
+                                        
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="partner">
+                            
+                            <div class="partner__pl">
+                                <div class="status status_confirmed">
+                                    Подтвержден
+                                </div>
+                                <div class="partner__pl_title">
+                                    ООО «ЮНИСТРИМ КОМПАНИ»
+                                </div>
+                                <div class="partner__pl_nm">
+                                    123456890 / 123456789
+                                </div>
+                            </div>
+
+                            <div class="partner__values">
+                                <div class="partner__value">
+                                    <div class="partner__value_num">
+                                        13
+                                    </div>
+                                    <div class="partner__value_name">
+                                        партнеры
+                                    </div>
+                                </div>
+                                <div class="partner__value">
+                                    <div class="partner__value_num">
+                                        2
+                                    </div>
+                                    <div class="partner__value_name">
+                                        заказы
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="partner__action">
+                                <div class="partner__action_date">
+                                    25.09.2021
+                                </div>
+                                <button class="partner__action_edit" data-micromodal-trigger="partnerEdit">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.8063 9.25195C24.2788 8.77945 24.5388 8.15195 24.5388 7.48445C24.5388 6.81695 24.2788 6.18945 23.8063 5.71695L21.8237 3.73445C21.3512 3.26195 20.7238 3.00195 20.0563 3.00195C19.3888 3.00195 18.7612 3.26195 18.29 3.7332L5 16.982V22.5007H10.5163L23.8063 9.25195ZM20.0563 5.50195L22.04 7.4832L20.0525 9.4632L18.07 7.48195L20.0563 5.50195ZM7.5 20.0007V18.0195L16.3 9.24695L18.2825 11.2295L9.48375 20.0007H7.5ZM5 25.0007H25V27.5007H5V25.0007Z" fill="#1D327B"/>
+                                        </svg>
+                                        
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="partner">
+                            
+                            <div class="partner__pl">
+                                <div class="status status_confirmed">
+                                    Подтвержден
+                                </div>
+                                <div class="partner__pl_title">
+                                    ООО «ЮНИСТРИМ КОМПАНИ»
+                                </div>
+                                <div class="partner__pl_nm">
+                                    123456890 / 123456789
+                                </div>
+                            </div>
+
+                            <div class="partner__values">
+                                <div class="partner__value">
+                                    <div class="partner__value_num">
+                                        13
+                                    </div>
+                                    <div class="partner__value_name">
+                                        партнеры
+                                    </div>
+                                </div>
+                                <div class="partner__value">
+                                    <div class="partner__value_num">
+                                        2
+                                    </div>
+                                    <div class="partner__value_name">
+                                        заказы
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="partner__action">
+                                <div class="partner__action_date">
+                                    25.09.2021
+                                </div>
+                                <button class="partner__action_edit" data-micromodal-trigger="partnerEdit">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.8063 9.25195C24.2788 8.77945 24.5388 8.15195 24.5388 7.48445C24.5388 6.81695 24.2788 6.18945 23.8063 5.71695L21.8237 3.73445C21.3512 3.26195 20.7238 3.00195 20.0563 3.00195C19.3888 3.00195 18.7612 3.26195 18.29 3.7332L5 16.982V22.5007H10.5163L23.8063 9.25195ZM20.0563 5.50195L22.04 7.4832L20.0525 9.4632L18.07 7.48195L20.0563 5.50195ZM7.5 20.0007V18.0195L16.3 9.24695L18.2825 11.2295L9.48375 20.0007H7.5ZM5 25.0007H25V27.5007H5V25.0007Z" fill="#1D327B"/>
+                                        </svg>
+                                        
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>  
+        </main>
+    </div>
+
+    <div class="modal partner-add" id="partnerAdd" aria-hidden="true">
+
+        <div class="modal__layer" tabindex="-1" data-micromodal-close>
+    
+            <div class="modal__wrapper" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
+    
+    
+                <!-- 1 step -->
+                <div class="modal__content partner-add__content" id="modal-1-content">
+                    <div class="partner-add__content_in">
+                        <h2 class="modal__title partner-add__title">
+                            Добавить контрагента
+                        </h2>
+    
+                        <form class="partner-add__form">
+                            <div class="partner-add__form_item radio">
+                                <input type="radio" id="yur" name="ent">
+                                <label for="yur">Юридическое лицо</label>
+                            </div>
+                            <div class="partner-add__form_item radio">
+                                <input type="radio" id="fiz" name="ent">
+                                <label for="fiz">Физическое лицо</label>
+                            </div>
+                            <div class="partner-add__form_item select">
+                                <div class="form__name">ИНН</div>
+                                <select name="" id="" class="choices">
+                                    <option value="0123456789"></option>
+                                    <option value="0123456789"></option>
+                                    <option value="0123456789"></option>
+                                    <option value="0123456789"></option>
+                                </select>
+                            </div>
+                            <div class="partner-add__form_item select">
+                                <div class="form__name">КПП</div>
+                                <select name="" id="" class="choices">
+                                    <option value="123456789"></option>
+                                    <option value="123456789"></option>
+                                    <option value="123456789"></option>
+                                    <option value="123456789"></option>
+                                </select>
+                            </div>
+    
+    
+                            <div class="partner-add__form_btns">
+                                <button class="button">НАЙТИ</button>
+                                <button class="button-l" type="button" data-micromodal-close>отменить</button>
+                            </div>
+    
+                            
+                        </form>
+    
+                        <div class="partner-add__result">
+                            <h3 class="partner-add__result_title">
+                                ВЫБРАТЬ КОНТРАГЕНТА
+                            </h3>
+                            <div class="partner-add__result_list">
+                                <div class="partner-add__result_item">
+                                    <div class="name">
+                                        ООО «ЮНИСТРИМ КОМПАНИ»
+                                    </div>
+                                    <div class="info">
+                                        ИНН: 0123456789 / КПП: 123456789
+                                    </div>
+                                </div>
+        
+                                <div class="partner-add__result_item">
+                                    <div class="name">
+                                        ООО «ЮНИСТРИМ КОМПАНИ»
+                                    </div>
+                                    <div class="info">
+                                        ИНН: 0123456789 / КПП: 123456789
+                                    </div>
+                                </div>
+    
+                                
+                            </div>
+                            <button class="partner-add__result_btn button-l" data-micromodal-close>отменить</button>
+                            
+                        </div>
+    
+                        <div class="partner-add__info">
+                            Шаг 1 из 3
+                        </div>
+                    </div>
+                </div>
+    
+                
+            
+            
+            </div>
+        </div>
+    </div>
+    @@include('./modal/partner-edit.html')
+    
+    <script src="./js/bundle.js"></script>
+</body>
+</html>
