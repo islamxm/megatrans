@@ -29,7 +29,7 @@
 
                     <div class="dec-new__content_tabs">
 
-                        <div class="dec-new__content_tab dec-new__main">
+                        <div class="dec-new__content_tab dec-new__main active">
 
 
                             <form class="dec-new__form_body">
@@ -81,19 +81,19 @@
                                     <div class="dec-new__form_body_part_grid">
                                         <div class="dec-new__form_body_part_grid_item input">
                                             <div class="name">ИНН</div>
-                                            <input type="text">
+                                            <input value="15457845681" readonly type="text">
                                         </div>
                                         <div class="dec-new__form_body_part_grid_item input">
                                             <div class="name">Наименование</div>
-                                            <input type="text">
+                                            <input value="ООО «Компани один»" readonly type="text">
                                         </div>
                                         <div class="dec-new__form_body_part_grid_item input">
                                             <div class="name">Номер телефона</div>
-                                            <input type="text">
+                                            <input value="+7 (913)445-15-95" readonly type="text">
                                         </div>
                                         <div class="dec-new__form_body_part_grid_item input">
                                             <div class="name">Контактное лицо</div>
-                                            <input type="text">
+                                            <input value="Федорчук Ю.А." readonly type="text">
                                         </div>
                                     </div>
 
@@ -125,19 +125,19 @@
                                     <div class="dec-new__form_body_part_grid">
                                         <div class="dec-new__form_body_part_grid_item input">
                                             <div class="name">ФИО</div>
-                                            <input type="text">
+                                            <input value="Федорчук Ю.А." readonly type="text">
                                         </div>
                                         <div class="dec-new__form_body_part_grid_item input">
                                             <div class="name">Паспортные данные</div>
-                                            <input type="text">
+                                            <input value="Севастополь" readonly type="text">
                                         </div>
                                         <div class="dec-new__form_body_part_grid_item input">
                                             <div class="name">Номер телефона</div>
-                                            <input type="text">
+                                            <input value="+7(909) 456-85-89" readonly type="text">
                                         </div>
                                         <div class="dec-new__form_body_part_grid_item input">
                                             <div class="name">E-mail</div>
-                                            <input type="text">
+                                            <input value="mail@mail.ru" readonly type="text">
                                         </div>
                                     </div>
 
@@ -153,44 +153,64 @@
                                     </div>
                                     <div class="dec-new__form_body_part_row">
                                         <div class="dec-new__form_body_part_row_item w-25 radio">
-                                            <input type="radio" id="sender" name="payer">
+                                            <input class="hiddenBlockToggler" type="radio" id="sender" name="payer">
                                             <label for="sender">Отправитель</label>
                                         </div>
                                         <div class="dec-new__form_body_part_row_item w-25 radio">
-                                            <input type="radio" id="recipient" name="payer">
+                                            <input class="hiddenBlockToggler" type="radio" id="recipient" name="payer">
                                             <label for="recipient">Получатель</label>
                                         </div>
                                         <div class="dec-new__form_body_part_row_item w-25 radio">
-                                            <input type="radio" id="third" name="payer">
+                                            <input class="hiddenBlockToggler" type="radio" id="third" name="payer">
                                             <label for="third">Третье лицо</label>
                                         </div>
                                         <div class="dec-new__form_body_part_row_item w-25 radio">
-                                            <input type="radio" id="divide" name="payer">
+                                            <input class="hiddenBlockToggler" type="radio" id="divide" name="payer">
                                             <label for="divide">Разделить</label>
                                         </div>
                                     </div>
                                     <div class="dec-new__form_body_part_grid">
                                         <div class="dec-new__form_body_part_grid_item input">
-                                            <div class="name">ФИО</div>
-                                            <input type="text">
+                                            <div class="name">ИНН</div>
+                                            <input value="456789169541" readonly type="text">
                                         </div>
                                         <div class="dec-new__form_body_part_grid_item input">
-                                            <div class="name">Паспортные данные</div>
-                                            <input type="text">
+                                            <div class="name">Наименование</div>
+                                            <input value="ООО «Компани два»" readonly type="text">
                                         </div>
                                         <div class="dec-new__form_body_part_grid_item input">
                                             <div class="name">Номер телефона</div>
-                                            <input type="text">
+                                            <input value="+7 (4512) 456-15-45" readonly type="text">
                                         </div>
                                         <div class="dec-new__form_body_part_grid_item input">
-                                            <div class="name">E-mail</div>
-                                            <input type="text">
+                                            <div class="name">Контактное лицо</div>
+                                            <input value="Крошкин Р.А." readonly type="text">
                                         </div>
                                     </div>
                                     <div class="dec-new__form_body_part_add">
                                         <button>Добавить контакное лицо</button>
                                     </div>
                                    
+                                </div>
+
+                                <div class="dec-new__form_body_part third__part">
+                                    <div class="dec-new__form_body_part_title">
+                                        ТРЕТЬЕ ЛИЦО
+                                    </div>
+                                    <div class="dec-new__form_body_part_row">
+                                        <div class="dec-new__form_body_part_row_item w-100 select">
+                                            <div class="head">
+                                                <div class="name">Выбрать из списка</div>
+                                                <div class="ex">Нет в списке?</div>
+                                            </div>
+
+                                            <select class="choices" name="" id="">
+                                                <option value="Выберите из списка"></option>
+                                                <option value="Выберите из списка"></option>
+                                                <option value="Выберите из списка"></option>
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="dec-new__content_action">
                                     <button class="button">продолжить</button>

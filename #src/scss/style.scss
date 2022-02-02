@@ -12,6 +12,7 @@
 @import './blocks/header.scss';
 @import './blocks/header-menu.scss';
 @import './blocks/aside.scss';
+@import './blocks/details.scss';
 
 //PAGES
 
@@ -37,12 +38,36 @@
 @import './components/partner.scss';
 @import './components/table.scss';
 @import './components/date.scss';
+@import './components/radio-tabs.scss';
+@import './components/textarea.scss';
 
 //MEDIA
+
+
+//components
+@import './media/components/partner.scss';
+@import './media/components/modal.scss';
+
+
+//blocks
 @import './media/blocks/auth.scss';
 @import './media/blocks/header.scss';
+@import './media/blocks/header-menu.scss';
+@import './media/blocks/aside.scss';
+
+
+
+
+//pages 
+@import './media/pages/partners.scss';
+
+
 
 
 //MODAL 
 @import './modal/partner-add.scss';
 @import './modal/partner-edit.scss';
+
+
+//modal 
+@import './media/modal/partner-add.scss';

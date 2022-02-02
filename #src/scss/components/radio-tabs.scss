@@ -1,0 +1,45 @@
+.radio-tabs {
+
+    &__item {
+
+        position: relative;
+        cursor: pointer;
+        padding-left: 30px;
+        line-height: 25px;
+        font-weight: 500;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ECECEC;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__item.active {
+
+        &:after {
+            content: url('../img/radio.svg');
+        }
+    }
+}
+
+.radio-content {
+
+
+    
+    &__item {
+        display: none;
+    }
+
+    &__item.active {
+        display: block;
+    }
+}

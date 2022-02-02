@@ -24,46 +24,19 @@
             <div class="dec-new" id="dec-new">
                 <h2 class="dec-new__title title">Новая заявка</h2>
                 
-                <div class="dec-new__content">
+                <div class="dec-new__content tab-main-wrapper">
                     <div class="dec-new__content_top">
-                        <div class="dec-new__content_top_item">
+                        <div class="dec-new__content_top_item" data-tab="true">
                             Создать новую
                         </div>
-                        <div class="dec-new__content_top_item">
+                        <div class="dec-new__content_top_item" data-tab="true">
                             Создать копированием
                         </div>
                     </div>
 
 
                     <div class="dec-new__content_tabs">
-                        <!-- <table class="dec-new__content_tab table">
-                            <tr class="table__headrow">
-                                <th class="table__headrow_item">маршрут</th>
-                                <th class="table__headrow_item">отправитель</th>
-                                <th class="table__headrow_item">получатель</th>
-                                <th class="table__headrow_item"></th>
-                            </tr>
-    
-                            <tr class="table__row">
-                                <td class="table__row_item center">Пенза — Киров</td>
-                                <td class="table__row_item center">Константинопольский К. А.</td>
-                                <td class="table__row_item center">ООО  «Компани один»</td>
-                                <td class="table__row_item center">
-                                    <button class="name">выбрать</button>
-                                </td>
-                            </tr>
-    
-                            <tr class="spacer"></tr>
-    
-                            <tr class="table__row">
-                                <td class="table__row_item center">Пенза — Киров</td>
-                                <td class="table__row_item center">Константинопольский К. А.</td>
-                                <td class="table__row_item center">ООО  «Компани один»</td>
-                                <td class="table__row_item center">
-                                    <button class="name">выбрать</button>
-                                </td>
-                            </tr>
-                        </table> -->
+                        
 
                         <div class="dec-new__content_tab dec-new__main">
                             <form class="dec-new__form_body">
@@ -95,27 +68,46 @@
 
                                     </div>
 
-                                    <div class="dec-new__form_body_part_row radio-select">
-                                        <div class="dec-new__form_body_part_row_item">
-                                            <div class="change">Сдать в терминале</div>
+                                    <div class="tab-wrapper">
+                                        <div class="dec-new__form_body_part_row radio-select radio-tabs">
+                                            <div class="dec-new__form_body_part_row_item radio-tabs__item" data-tab="true">
+                                                Сдать в терминале
+                                            </div>
+                                            <div class="dec-new__form_body_part_row_item radio-tabs__item" data-tab="true">
+                                                Забрать по адресу
+                                            </div>
                                         </div>
-                                        <div class="dec-new__form_body_part_row_item">
-                                            <div class="change">Забрать по адресу</div>
+    
+                                        <div class="dec-new__form_body_part_row radio-content">
+                                            <div class="dec-new__form_body_part_row_item select w-100 radio-content__item">
+                                                <div class="head">
+                                                    <div class="name">Выберите терминал</div>
+                                                </div>
+                                                <select name="" id="" class="select choices">
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                </select>
+                                            </div>
+    
+                                            <div class="dec-new__form_body_part_row_item select w-100 radio-content__item">
+                                                <div class="head">
+                                                    <div class="name">Укажите адресс</div>
+                                                </div>
+                                                <select name="" id="" class="select choices">
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                </select>
+                                            </div>
+                                            
                                         </div>
-                                    </div>
-
-                                    <div class="dec-new__form_body_part_row">
-                                        <div class="dec-new__form_body_part_row_item select w-100">
-                                            <select name="" id="" class="select choices">
-                                                <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
-                                                <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
-                                                <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
-                                                <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
-                                                <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
-                                                <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
-                                            </select>
-                                        </div>
-                                        
                                     </div>
                                 </div>
 
@@ -136,28 +128,51 @@
                                         </div>
                                     </div>
 
-                                    <div class="dec-new__form_body_part_row radio-select">
-                                        <div class="dec-new__form_body_part_row_item">
-                                            <div class="change">Сдать в терминале</div>
+
+                                    <div class="tab-wrapper">
+                                        <div class="dec-new__form_body_part_row radio-select radio-tabs">
+                                            <div class="dec-new__form_body_part_row_item radio-tabs__item" data-tab="true">
+                                                Сдать в терминале
+                                            </div>
+                                            <div class="dec-new__form_body_part_row_item radio-tabs__item" data-tab="true">
+                                                Забрать по адресу
+                                            </div>
                                         </div>
-                                        <div class="dec-new__form_body_part_row_item">
-                                            <div class="change">Забрать по адресу</div>
+    
+                                        <div class="dec-new__form_body_part_row radio-content">
+                                            <div class="dec-new__form_body_part_row_item select w-100 radio-content__item">
+                                                <div class="head">
+                                                    <div class="name">Выберите терминал</div>
+                                                </div>
+                                                <select name="" id="" class="select choices">
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                </select>
+                                            </div>
+    
+                                            <div class="dec-new__form_body_part_row_item select w-100 radio-content__item">
+                                                <div class="head">
+                                                    <div class="name">Укажите адресс</div>
+                                                </div>
+                                                <select name="" id="" class="select choices">
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                    <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
+                                                </select>
+                                            </div>
+                                            
                                         </div>
                                     </div>
 
-                                    <div class="dec-new__form_body_part_row">
-                                        <div class="dec-new__form_body_part_row_item w-100 select">
-                                            <select name="" id="" class="select choices">
-                                                <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
-                                                <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
-                                                <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
-                                                <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
-                                                <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
-                                                <option value="г. Нижневаротовск, ул Кузоваткина, д.27, стр. 6"></option>
-                                            </select>
-                                        </div>
-                                        
-                                    </div>
+
+                                    
                                 </div>
 
                                 <div class="dec-new__form_body_part">
@@ -175,17 +190,23 @@
                                         </div>
                                     </div>
                                     <div class="dec-new__form_body_part_row">
-                                        <div class="dec-new__form_body_part_row_item input w-33">
+                                        <div class="dec-new__form_body_part_row_item input input-after w-33">
                                             <div class="head">
                                                 <div class="name">Объем</div>
                                             </div>
-                                            <input type="text" placeholder="250">
+                                            <div class="input-after_wr">
+                                                <input type="text" placeholder="250">
+                                                <span>m3</span>
+                                            </div>
                                         </div>
-                                        <div class="dec-new__form_body_part_row_item input w-33">
+                                        <div class="dec-new__form_body_part_row_item input input-after w-33">
                                             <div class="head">
                                                 <div class="name">Вес</div>
                                             </div>
-                                            <input type="text" placeholder="250">
+                                            <div class="input-after_wr">
+                                                <input type="text" placeholder="250">
+                                                <span>кг</span>
+                                            </div>
                                         </div>
                                         <div class="dec-new__form_body_part_row_item input w-33">
                                             <div class="head">
@@ -402,6 +423,37 @@
 
                             </div>
                         </div>
+
+                        <table class="dec-new__content_tab table">
+                            <tr class="table__headrow">
+                                <th class="table__headrow_item">маршрут</th>
+                                <th class="table__headrow_item">отправитель</th>
+                                <th class="table__headrow_item">получатель</th>
+                                <th class="table__headrow_item"></th>
+                            </tr>
+    
+                            <tr class="table__row">
+                                <td class="table__row_item center">Пенза — Киров</td>
+                                <td class="table__row_item center">Константинопольский К. А.</td>
+                                <td class="table__row_item center">ООО  «Компани один»</td>
+                                <td class="table__row_item center">
+                                    <button class="name">выбрать</button>
+                                </td>
+                            </tr>
+    
+                            <tr class="spacer"></tr>
+    
+                            <tr class="table__row">
+                                <td class="table__row_item center">Пенза — Киров</td>
+                                <td class="table__row_item center">Константинопольский К. А.</td>
+                                <td class="table__row_item center">ООО  «Компани один»</td>
+                                <td class="table__row_item center">
+                                    <button class="name">выбрать</button>
+                                </td>
+                            </tr>
+
+                            
+                        </table>
                     </div>
                     
 

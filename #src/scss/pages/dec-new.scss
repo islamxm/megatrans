@@ -9,10 +9,15 @@
         margin-bottom: 90px;
     }
 
-    &__main {
+    &__main.active {
         display: flex;
+    }
+
+    &__main {
+        display: none;
         justify-content: space-between;
         max-width: 1300px;
+        gap: 30px;
         width: 100%;
         align-items: flex-start;
 
@@ -67,6 +72,9 @@
             }
         }
 
+        &_tab {
+        }
+
         
 
         &_more {
@@ -96,6 +104,8 @@
 
             button {
                 width: 263px;
+                padding-left: 10px;
+                padding-right: 10px;
             }
         }
     }
@@ -106,6 +116,10 @@
             max-width: 833px;
             width: 100%;
 
+
+            &_part.third__part {
+                display: none;
+            }
             &_part {    
                 margin-bottom: 100px;
 

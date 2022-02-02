@@ -1,7 +1,14 @@
+.table.active {
+    display: table;
+}
+
 .table {
     width: 100%;
     border-spacing: 15px;
     border-collapse: collapse;
+    display: none;
+    max-width: 1300px;
+    width: 100%;
     
     td, th {
         text-align: left;

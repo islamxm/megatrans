@@ -1,0 +1,27 @@
+.details {
+    margin-bottom: 40px;
+    &__item {
+        padding-bottom: 24px;
+        padding-top: 16px;
+        border-bottom: 1px solid #ECECEC;
+        &_row {
+            display: flex;
+            gap: 13px;
+            margin-bottom: 5px;
+            &:last-child {
+                margin: 0;
+            }
+
+            .name {
+                line-height: 25px;
+                width: 200px;
+            }
+
+            .value {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 25px;
+            }
+        }
+    }
+}

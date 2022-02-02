@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('./blocks/header-menu.html')
+        <main class="main main-w">
+            @@include('./blocks/aside.html')
+            <div class="dec-new" id="dec-new">
+                <h2 class="dec-new__title title">Новая заявка</h2>
+
+                <div class="dec-new__content">
+
+
+                    <div class="dec-new__content_tabs">
+
+                        <div class="dec-new__content_tab dec-new__main active">
+
+
+                            <form class="dec-new__form_body">
+
+                                <div class="dec-new__form_body_part">
+
+                                    <div class="dec-new__form_body_part_title">
+                                        ДЕТАЛИ ЗАЯВКИ
+                                    </div>
+                                    <div class="details">
+                                        <div class="details__item">
+                                            <div class="details__item_row">
+                                                <div class="name">Способ перевозки</div>
+                                                <div class="value">Сборным грузом</div>
+                                            </div>
+                                            <div class="details__item_row">
+                                                <div class="name">Параметры перевозки</div>
+                                                <div class="value">Автоперевозка</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="details__item">
+                                            <div class="details__item_row">
+                                                <div class="name">Габариты груза</div>
+                                                <div class="value">1 х 1 х 1</div>
+                                            </div>
+                                            <div class="details__item_row">
+                                                <div class="name">Вес груза</div>
+                                                <div class="value">1 кг</div>
+                                            </div>
+                                            <div class="details__item_row">
+                                                <div class="name">Объем груза</div>
+                                                <div class="value">1 м3</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="details__item">
+                                            <div class="details__item_row">
+                                                <div class="name">Откуда</div>
+                                                <div class="value">Грозный (Респ. Чеченская</div>
+                                            </div>
+                                            <div class="details__item_row">
+                                                <div class="name">Адрес терминала отправителя</div>
+                                                <div class="value">Грозный, ул. Коперника, 3</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="details__item">
+                                            <div class="details__item_row">
+                                                <div class="name">Куда</div>
+                                                <div class="value">Грозный (Респ. Чеченская</div>
+                                            </div>
+                                            <div class="details__item_row">
+                                                <div class="name">Адрес терминала отправителя</div>
+                                                <div class="value">Грозный, ул. Коперника, 3</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="details__item">
+                                            <div class="details__item_row">
+                                                <div class="name">Дата отправки</div>
+                                                <div class="value">22.05.2021</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="details__item">
+                                            <div class="details__item_row">
+                                                <div class="name">Услуги на терминале отправителе</div>
+                                                <div class="value">Страхование груза и срока</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="details__item">
+                                            <div class="details__item_row">
+                                                <div class="name">Отправитель</div>
+                                                <div class="value">
+                                                    Физическое лицо<br>
+                                                    ФИО: Колян Тигран Сашаевич<br>
+                                                    паспорт серия: 0709: <br>
+                                                    номер: 155796 <br>
+                                                    Телефон:+7 (996) 414-55-77<br>
+                                                    Страна: Россия<br>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="details__item">
+                                            <div class="details__item_row">
+                                                <div class="name">Получатель</div>
+                                                <div class="value">
+                                                    Частное лицо<br>
+                                                    ФИО: Каприелов рафаэл Арамович <br>
+                                                    Мобильный телефон: +7 (966) 574-57-57 <br>
+                                                    Email: rafael510155501@gmail.com<br>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="details__item">
+                                            <div class="details__item_row">
+                                                <div class="name">Плательщик</div>
+                                                <div class="value">
+                                                    Получатель
+                                                </div>
+                                            </div>
+
+                                            <div class="details__item_row">
+                                                <div class="name">Форма оплаты</div>
+                                                <div class="value">
+                                                    Безналичный расчет
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="details__item">
+                                            <div class="details__item_row">
+                                                <div class="name">Оплата услуг</div>
+                                                <div class="value">
+                                                    Межтерминальная перевозка<br>
+                                                    получатель<br>
+                                                    Страховка<br>
+                                                    получатель<br>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="dec-new__form_body_part_row">
+                                        <div class="dec-new__form_body_part_row_item w-100 checkbox">
+                                            <input type="checkbox" id="driver">
+                                            <label for="driver">Запрос данных по водителю </label>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="dec-new__form_body_part_row">
+                                        <div class="dec-new__form_body_part_row_item w-100 textarea">
+
+                                            <div class="head">
+                                                <div class="name">Комментарий водителю</div>
+                                            </div>
+                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                                <div class="dec-new__content_action">
+                                    <button class="button">отправить</button>
+                                    <button class="button-l">сохранить черновик</button>
+                                </div>
+                                <div class="dec-new__content_steps">
+                                    <a href="#">
+                                        <img src="./img/step-arrow.svg" alt="">
+                                    </a>
+                                    Шаг 3 из 3
+                                </div>
+                            </form>
+                            <div class="dec-new__form_info">
+
+                                <div class="dec-new__form_info_panel">
+                                    <div class="dec-new__form_info_panel_title">
+                                        СУММА ЗАКАЗА
+                                    </div>
+
+                                    <div class="dec-new__form_info_panel_list">
+                                        <div class="dec-new__form_info_panel_item">
+                                            <div class="name">Межтерминальная перевозка</div>
+                                            <div class="value">1 000₽</div>
+                                        </div>
+                                        <div class="dec-new__form_info_panel_item">
+                                            <div class="name">Забор груза</div>
+                                            <div class="value">200₽</div>
+                                        </div>
+                                        <div class="dec-new__form_info_panel_item">
+                                            <div class="name">Доставка груза</div>
+                                            <div class="value">560₽</div>
+                                        </div>
+                                        <div class="dec-new__form_info_panel_item">
+                                            <div class="name">Доп услуги</div>
+                                            <div class="value">1 200₽</div>
+                                        </div>
+                                        <div class="dec-new__form_info_panel_item">
+                                            <div class="name">Страхование</div>
+                                            <div class="value">950₽</div>
+                                        </div>
+                                        <div class="dec-new__form_info_panel_item">
+                                            <div class="name">Упаковка</div>
+                                            <div class="value">250₽</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="dec-new__form_info_panel_total">
+                                        <div class="name">Итого:</div>
+                                        <div class="value">2 960₽</div>
+                                    </div>
+
+                                    <div class="dec-new__form_info_panel_ex">
+                                        Данная стоимость является ориентировочной. Окончательная стоимость перевозки
+                                        будет известна после поступления груза на склад отправления
+                                    </div>
+                                </div>
+
+                                <div class="dec-new__form_info_panel">
+                                    <div class="dec-new__form_info_panel_title">
+                                        ДВИЖЕНИЕ ГРУЗА
+                                    </div>
+                                    <div class="dec-new__form_info_panel_timeline">
+                                        <div class="steps">
+                                            <div class="step">
+                                                <div class="name">Прием груза</div>
+                                                <div class="dat">18 марта</div>
+                                            </div>
+                                            <div class="step">
+                                                <div class="name">Отправка груза</div>
+                                                <div class="dat">19 марта</div>
+                                            </div>
+                                            <div class="step">
+                                                <div class="name">Прибытие груза</div>
+                                                <div class="dat">21 марта</div>
+                                            </div>
+                                            <div class="step">
+                                                <div class="name">Доставка груза до адреса</div>
+                                                <div class="dat">21 марта</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="dec-new__content_more">
+                        <button>показать еще</button>
+                    </div> -->
+
+
+
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+
+    <!-- @@include('./modal/partner-edit.html') -->
+
+    <script src="./js/bundle.js"></script>
+</body>
+
+</html>

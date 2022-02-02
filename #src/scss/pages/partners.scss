@@ -1,8 +1,9 @@
 .partners {
-    padding: 114px 50px 50px 83px;
+    padding: 114px 40px 50px 40px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 1500px;
 
     &__title {
         width: 50%;
@@ -42,7 +43,7 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        gap: 35px;
+        gap: 3.5%;
 
         .partner {
 

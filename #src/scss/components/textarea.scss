@@ -1,0 +1,20 @@
+.textarea {
+
+    textarea {
+        border: 1px solid #F0F0F0;
+        padding: 15px 25px;
+        height: 100px;
+        display: block;
+        width: 100%;
+        resize: none;
+
+        &:focus {
+            border-color: $blue;
+            outline: none;
+        }
+
+        &:invalid {
+            border-color: $red;
+        }
+    }
+}

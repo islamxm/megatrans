@@ -1,0 +1,29 @@
+@media (max-width: 1200px) {
+
+    .partner-add {
+
+        &__content {
+
+            &_in {
+                
+            }
+        }
+
+        &__success {
+
+        }
+
+        &__result {
+
+            &_item {
+                
+                .name {
+                    margin: 0;
+                }
+                .info {
+                    display: none;
+                }
+            }
+        }
+    }
+}

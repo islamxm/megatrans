@@ -1,3 +1,13 @@
+.checkbox.checkbox-big {
+    
+    label {
+        display: block;
+        &:after {
+            top: 0;
+        }
+    }
+}
+
 .checkbox {
     
     input {
@@ -17,6 +27,13 @@
         cursor: pointer;
         display: flex;
         align-items: center;
+        line-height: 24px !important;
+
+        a {
+            text-decoration: underline;
+            color: $blue;
+            
+        }
 
         button {
             display: flex;

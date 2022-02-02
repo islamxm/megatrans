@@ -24,6 +24,8 @@ export function adaptiveSizes() {
         window.addEventListener('resize', () => {
             aside.style.cssText = `padding-top: ${headerMenu.scrollHeight + 100}px`;
         });
+
+        
     }
     
     if(modal.length > 0) {
@@ -31,4 +33,10 @@ export function adaptiveSizes() {
             modal.style.cssText = `padding-top: ${headerMenu.scrollHeight + 25}px`;
         });
     }
+
+
+
+    //media
+
+    
 }

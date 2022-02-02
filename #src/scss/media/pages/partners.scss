@@ -1,0 +1,21 @@
+@media (max-width: 1500px) {
+
+    .partners {
+        padding: 50px 30px;
+
+        &__list {
+            justify-content: space-between;
+            gap: unset;
+        }
+    }
+}
+
+@media (max-width: 1275px) {
+
+    .partners {
+
+        &__content {
+            margin-top: 40px;
+        }
+    }
+}

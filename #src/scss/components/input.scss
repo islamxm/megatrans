@@ -14,7 +14,15 @@
         &:invalid {
             border-color: $red;
         }
+
+        &:read-only {
+            background-color: #ECECEC !important;
+            border-color: #ECECEC !important;
+
+        }
     }
+
+    
 
     &_ex {
         opacity: 0;
@@ -24,6 +32,28 @@
         font-size: 12px;
         line-height: 16px;
         color: $red;
+    }
+}
+
+
+
+.input.input-after {
+
+    .input-after_wr {
+        position: relative;
+
+        span {
+            position: absolute;
+            top: calc(50% - 12.5px);
+            right: 12px;
+            font-size: 16px;
+            line-height: 25px;
+
+        }
+
+        input {
+            padding-right: 40px;
+        }
     }
 }
 
