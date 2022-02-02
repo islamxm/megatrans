@@ -1,0 +1,33 @@
+.dec {
+    padding: 114px 50px 50px 83px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__title {
+        width: 50%;
+    }
+
+    &__action {
+        width: 50%;    
+        display: flex;
+        justify-content: flex-end;
+        gap: 18px;
+
+        &_btn {
+            width: 250px;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        margin-top: 110px;
+
+
+        &_top {
+            display: flex;
+            gap:12px;
+            margin-bottom: 65px;
+        }
+    }
+}

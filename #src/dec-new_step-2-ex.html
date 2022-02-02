@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body >
+    <div class="wrapper">
+        @@include('./blocks/header-menu.html')
+        <main class="main main-w">
+            @@include('./blocks/aside.html')
+            <div class="dec-new" id="dec-new">
+                <h2 class="dec-new__title title">Новая заявка</h2>
+                
+                <div class="dec-new__content">
+
+
+                    <div class="dec-new__content_tabs">
+
+                        <div class="dec-new__content_tab dec-new__main">
+
+
+                            <form class="dec-new__form_body">
+
+
+                                <div class="dec-new__form_body_part">
+                                    <div class="dec-new__form_body_part_title">
+                                        ОТПРАВИТЕЛЬ
+                                    </div>
+                                    <div class="dec-new__form_body_part_row">
+                                        
+
+                                        <div class="dec-new__form_body_part_row_item select w-100">
+
+                                            <div class="head">
+                                                <div class="name">Выбрать из списка</div>
+                                                <a href="#" class="ex">Нет в списке?</a>
+                                            </div>
+
+                                            <select name="" id="" class="choices">
+                                                <option value="ООО «Компани один»"></option>
+                                                <option value="ООО «Компани один»"></option>
+                                                <option value="ООО «Компани один»"></option>
+                                            </select>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="dec-new__form_body_part_row">
+                                        
+
+                                        <div class="dec-new__form_body_part_row_item select w-100">
+
+                                            <div class="head">
+                                                <div class="name">Выбрать контактное лицо</div>
+                                                <a href="#" class="ex">Нет в списке?</a>
+                                            </div>
+
+                                            <select name="" id="" class="choices">
+                                                <option value="ООО «Компани один»"></option>
+                                                <option value="ООО «Компани один»"></option>
+                                                <option value="ООО «Компани один»"></option>
+                                            </select>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="dec-new__form_body_part_grid">
+                                        <div class="dec-new__form_body_part_grid_item input">
+                                            <div class="name">ИНН</div>
+                                            <input type="text">
+                                        </div>
+                                        <div class="dec-new__form_body_part_grid_item input">
+                                            <div class="name">Наименование</div>
+                                            <input type="text">
+                                        </div>
+                                        <div class="dec-new__form_body_part_grid_item input">
+                                            <div class="name">Номер телефона</div>
+                                            <input type="text">
+                                        </div>
+                                        <div class="dec-new__form_body_part_grid_item input">
+                                            <div class="name">Контактное лицо</div>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="dec-new__form_body_part_add">
+                                        <button>Добавить контакное лицо</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="dec-new__form_body_part">
+                                    <div class="dec-new__form_body_part_title">
+                                        ПОЛУЧАТЕЛЬ
+                                    </div>
+                                    <div class="dec-new__form_body_part_row">
+                                        <div class="dec-new__form_body_part_row_item w-100 select">
+                                            <div class="head">
+                                                <div class="name">Выбрать из списка</div>
+                                                <a href="#" class="ex">Нет в списке?</a>
+                                            </div>
+
+                                            <select name="" id="" class="choices">
+                                                <option value="Выберите из списка"></option>
+                                                <option value="Выберите из списка"></option>
+                                                <option value="Выберите из списка"></option>
+                                                <option value="Выберите из списка"></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="dec-new__form_body_part_grid">
+                                        <div class="dec-new__form_body_part_grid_item input">
+                                            <div class="name">ФИО</div>
+                                            <input type="text">
+                                        </div>
+                                        <div class="dec-new__form_body_part_grid_item input">
+                                            <div class="name">Паспортные данные</div>
+                                            <input type="text">
+                                        </div>
+                                        <div class="dec-new__form_body_part_grid_item input">
+                                            <div class="name">Номер телефона</div>
+                                            <input type="text">
+                                        </div>
+                                        <div class="dec-new__form_body_part_grid_item input">
+                                            <div class="name">E-mail</div>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="dec-new__form_body_part_add">
+                                        <button>Добавить контакное лицо</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="dec-new__form_body_part">
+                                    <div class="dec-new__form_body_part_title">
+                                        ПЛАТЕЛЬЩИК
+                                    </div>
+                                    <div class="dec-new__form_body_part_row">
+                                        <div class="dec-new__form_body_part_row_item w-25 radio">
+                                            <input type="radio" id="sender" name="payer">
+                                            <label for="sender">Отправитель</label>
+                                        </div>
+                                        <div class="dec-new__form_body_part_row_item w-25 radio">
+                                            <input type="radio" id="recipient" name="payer">
+                                            <label for="recipient">Получатель</label>
+                                        </div>
+                                        <div class="dec-new__form_body_part_row_item w-25 radio">
+                                            <input type="radio" id="third" name="payer">
+                                            <label for="third">Третье лицо</label>
+                                        </div>
+                                        <div class="dec-new__form_body_part_row_item w-25 radio">
+                                            <input type="radio" id="divide" name="payer">
+                                            <label for="divide">Разделить</label>
+                                        </div>
+                                    </div>
+                                    <div class="dec-new__form_body_part_grid">
+                                        <div class="dec-new__form_body_part_grid_item input">
+                                            <div class="name">ФИО</div>
+                                            <input type="text">
+                                        </div>
+                                        <div class="dec-new__form_body_part_grid_item input">
+                                            <div class="name">Паспортные данные</div>
+                                            <input type="text">
+                                        </div>
+                                        <div class="dec-new__form_body_part_grid_item input">
+                                            <div class="name">Номер телефона</div>
+                                            <input type="text">
+                                        </div>
+                                        <div class="dec-new__form_body_part_grid_item input">
+                                            <div class="name">E-mail</div>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="dec-new__form_body_part_add">
+                                        <button>Добавить контакное лицо</button>
+                                    </div>
+                                   
+                                </div>
+                                <div class="dec-new__content_action">
+                                    <button class="button">продолжить</button>
+                                    <button class="button-l">отменить</button>
+                                </div>
+                                <div class="dec-new__content_steps">
+                                    <a href="#">
+                                        <img src="./img/step-arrow.svg" alt="">
+                                    </a>
+                                    Шаг 2 из 3
+                                </div>
+                            </form>
+                            <div class="dec-new__form_info">
+
+                                <div class="dec-new__form_info_panel">
+                                    <div class="dec-new__form_info_panel_title">
+                                        СУММА ЗАКАЗА
+                                    </div>
+
+                                    <div class="dec-new__form_info_panel_list">
+                                        <div class="dec-new__form_info_panel_item">
+                                            <div class="name">Межтерминальная перевозка</div>
+                                            <div class="value">1 000₽</div>
+                                        </div>
+                                        <div class="dec-new__form_info_panel_item">
+                                            <div class="name">Забор груза</div>
+                                            <div class="value">200₽</div>
+                                        </div>
+                                        <div class="dec-new__form_info_panel_item">
+                                            <div class="name">Доставка груза</div>
+                                            <div class="value">560₽</div>
+                                        </div>
+                                        <div class="dec-new__form_info_panel_item">
+                                            <div class="name">Доп услуги</div>
+                                            <div class="value">1 200₽</div>
+                                        </div>
+                                        <div class="dec-new__form_info_panel_item">
+                                            <div class="name">Страхование</div>
+                                            <div class="value">950₽</div>
+                                        </div>
+                                        <div class="dec-new__form_info_panel_item">
+                                            <div class="name">Упаковка</div>
+                                            <div class="value">250₽</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="dec-new__form_info_panel_total">
+                                        <div class="name">Итого:</div>
+                                        <div class="value">2 960₽</div>
+                                    </div>
+
+                                    <div class="dec-new__form_info_panel_ex">
+                                        Данная стоимость является ориентировочной. Окончательная стоимость перевозки будет известна после поступления груза на склад отправления
+                                    </div>
+                                </div>
+
+                                <div class="dec-new__form_info_panel">
+                                    <div class="dec-new__form_info_panel_title">
+                                        ДВИЖЕНИЕ ГРУЗА
+                                    </div>
+                                    <div class="dec-new__form_info_panel_timeline">
+                                        <div class="steps">
+                                            <div class="step">
+                                                <div class="name">Прием груза</div>
+                                                <div class="dat">18 марта</div>
+                                            </div>
+                                            <div class="step">
+                                                <div class="name">Отправка груза</div>
+                                                <div class="dat">19 марта</div>
+                                            </div>
+                                            <div class="step">
+                                                <div class="name">Прибытие груза</div>
+                                                <div class="dat">21 марта</div>
+                                            </div>
+                                            <div class="step">
+                                                <div class="name">Доставка груза до адреса</div>
+                                                <div class="dat">21 марта</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- <div class="dec-new__content_more">
+                        <button>показать еще</button>
+                    </div> -->
+
+                    
+
+                    
+                </div>
+                
+            </div>
+        </main>
+    </div>
+
+
+    <!-- @@include('./modal/partner-edit.html') -->
+    
+    <script src="./js/bundle.js"></script>
+</body>
+</html>

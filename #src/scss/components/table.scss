@@ -1,0 +1,117 @@
+.table {
+    width: 100%;
+    border-spacing: 15px;
+    border-collapse: collapse;
+    
+    td, th {
+        text-align: left;
+    }
+
+    &__headrow {
+
+        &_item {
+            padding: 16px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: lowercase;
+            cursor: pointer;
+            white-space: nowrap;
+
+            svg {
+                @include default-anim;
+                margin-left: 12px;
+
+                path {
+                    @include default-anim;
+                }
+            }
+        }
+
+        &_item.active {
+
+            svg {
+                transform: rotate(180deg);
+
+                path {
+                    stroke: $blue;
+                }
+            }
+        }
+    }
+
+    .spacer {
+        height: 15px;
+    }
+
+    &__row {
+        border: 2px solid #ECECEC;
+        @include default-anim;
+
+        &:hover {
+
+            background-color: $blue;
+
+
+            .table__row_item {
+                color: #fff;
+
+                .name {
+                    color: #fff;
+                }
+            }
+        }
+
+        &_item.center {
+            vertical-align: middle;
+            padding: 25px 16px;
+
+            .name {
+                margin: 0;
+            }
+        }
+        
+        &_item {
+            padding: 16px;
+            font-weight: 500;
+            max-width: 256px;
+            vertical-align: top;
+            @include default-anim;
+
+
+            .name {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 21px;
+                color: $blue;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                cursor: pointer;
+
+            }
+
+            .action {
+                display: flex;
+                gap: 25px;
+
+                &__edit {
+                    cursor: pointer;
+                }
+
+                &__delete {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &__row.red {
+
+        border-left: 7px solid $red;
+    }
+
+    &__row.blue {
+
+        border-left: 7px solid $blue;
+    }
+}

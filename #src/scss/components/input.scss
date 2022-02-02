@@ -1,10 +1,11 @@
 .input {
 
-    input {
+    input, select {
         padding: 13px 14px;
         display: block;
         border: 2px solid #ECECEC;
         background-color: #fff;
+        width: 100%;
 
         &:valid {
             background-color: #fff !important;
