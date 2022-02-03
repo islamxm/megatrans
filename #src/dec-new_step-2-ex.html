@@ -151,67 +151,173 @@
                                     <div class="dec-new__form_body_part_title">
                                         ПЛАТЕЛЬЩИК
                                     </div>
-                                    <div class="dec-new__form_body_part_row">
-                                        <div class="dec-new__form_body_part_row_item w-25 radio">
-                                            <input class="hiddenBlockToggler" type="radio" id="sender" name="payer">
-                                            <label for="sender">Отправитель</label>
+
+
+                                    <div class="tab-wrapper">
+                                        <div class="dec-new__form_body_part_row radio-tabs">
+                                            <div class="dec-new__form_body_part_row_item w-25 radio-tabs__item" data-tab="true">
+                                                Отправитель
+                                            </div>
+                                            <div class="dec-new__form_body_part_row_item w-25 radio-tabs__item" data-tab="true">
+                                                Получатель
+                                            </div>
+                                            <div class="dec-new__form_body_part_row_item w-25 radio-tabs__item" data-tab="true">
+                                                Третье лицо
+                                            </div>
+                                            <div class="dec-new__form_body_part_row_item w-25 radio-tabs__item" data-tab="true">
+                                                Разделить
+                                            </div>
                                         </div>
-                                        <div class="dec-new__form_body_part_row_item w-25 radio">
-                                            <input class="hiddenBlockToggler" type="radio" id="recipient" name="payer">
-                                            <label for="recipient">Получатель</label>
-                                        </div>
-                                        <div class="dec-new__form_body_part_row_item w-25 radio">
-                                            <input class="hiddenBlockToggler" type="radio" id="third" name="payer">
-                                            <label for="third">Третье лицо</label>
-                                        </div>
-                                        <div class="dec-new__form_body_part_row_item w-25 radio">
-                                            <input class="hiddenBlockToggler" type="radio" id="divide" name="payer">
-                                            <label for="divide">Разделить</label>
+    
+                                        <div class="radio-content">
+                                            <div class="radio-content__item">
+                                                <div class="dec-new__form_body_part_grid">
+                                                    <div class="dec-new__form_body_part_grid_item input">
+                                                        <div class="name">ИНН</div>
+                                                        <input value="456789169541" readonly type="text">
+                                                    </div>
+                                                    <div class="dec-new__form_body_part_grid_item input">
+                                                        <div class="name">Наименование</div>
+                                                        <input value="ООО «Компани два»" readonly type="text">
+                                                    </div>
+                                                    <div class="dec-new__form_body_part_grid_item input">
+                                                        <div class="name">Номер телефона</div>
+                                                        <input value="+7 (4512) 456-15-45" readonly type="text">
+                                                    </div>
+                                                    <div class="dec-new__form_body_part_grid_item input">
+                                                        <div class="name">Контактное лицо</div>
+                                                        <input value="Крошкин Р.А." readonly type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="radio-content__item">
+                                                <div class="dec-new__form_body_part_grid">
+                                                    <div class="dec-new__form_body_part_grid_item input">
+                                                        <div class="name">ИНН</div>
+                                                        <input value="456789169541" readonly type="text">
+                                                    </div>
+                                                    <div class="dec-new__form_body_part_grid_item input">
+                                                        <div class="name">Наименование</div>
+                                                        <input value="ООО «Компани два»" readonly type="text">
+                                                    </div>
+                                                    <div class="dec-new__form_body_part_grid_item input">
+                                                        <div class="name">Номер телефона</div>
+                                                        <input value="+7 (4512) 456-15-45" readonly type="text">
+                                                    </div>
+                                                    <div class="dec-new__form_body_part_grid_item input">
+                                                        <div class="name">Контактное лицо</div>
+                                                        <input value="Крошкин Р.А." readonly type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="radio-content__item">
+                                                <div class="dec-new__form_body_part_grid">
+                                                    <div class="dec-new__form_body_part_grid_item input">
+                                                        <div class="name">ИНН</div>
+                                                        <input value="456789169541" readonly type="text">
+                                                    </div>
+                                                    <div class="dec-new__form_body_part_grid_item input">
+                                                        <div class="name">Наименование</div>
+                                                        <input value="ООО «Компани два»" readonly type="text">
+                                                    </div>
+                                                    <div class="dec-new__form_body_part_grid_item input">
+                                                        <div class="name">Номер телефона</div>
+                                                        <input value="+7 (4512) 456-15-45" readonly type="text">
+                                                    </div>
+                                                    <div class="dec-new__form_body_part_grid_item input">
+                                                        <div class="name">Контактное лицо</div>
+                                                        <input value="Крошкин Р.А." readonly type="text">
+                                                    </div>
+                                                </div>
+    
+                                                <div class="dec-new__form_body_part third__part">
+                                                    <div class="dec-new__form_body_part_title">
+                                                        ТРЕТЬЕ ЛИЦО
+                                                    </div>
+                                                    <div class="dec-new__form_body_part_row">
+                                                        <div class="dec-new__form_body_part_row_item w-100 select">
+                                                            <div class="head">
+                                                                <div class="name">Выбрать из списка</div>
+                                                                <div class="ex">Нет в списке?</div>
+                                                            </div>
+                
+                                                            <select class="choices" name="" id="">
+                                                                <option value="Выберите из списка"></option>
+                                                                <option value="Выберите из списка"></option>
+                                                                <option value="Выберите из списка"></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="radio-content__item">
+                                                <table class="dec-new__form_body_part_table">
+                                                    <tr>
+                                                        <th>УСЛУГА</th>
+                                                        <th>СУММА</th>
+                                                        <th>плательщик</th>
+                                                        <th>ФОРМА ОПЛАТЫ</th>
+                                                    </tr>
+                                                    <tr class="def">
+                                                        <td>Межтерминальная перевозка</td>
+                                                        <td>1000 ₽</td>
+                                                        <td>
+                                                            <div class="select">
+                                                                <select class="choices">
+                                                                    <option value="Отправитель"></option>
+                                                                    <option value="Отправитель"></option>
+                                                                    <option value="Отправитель"></option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="select">
+                                                                <select class="choices">
+                                                                    <option value="Наличная"></option>
+                                                                    <option value="Наличная"></option>
+                                                                    <option value="Наличная"></option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="spacer"></tr>
+                                                    <tr class="def">
+                                                        <td>Межтерминальная перевозка</td>
+                                                        <td>1000 ₽</td>
+                                                        <td>
+                                                            <div class="select">
+                                                                <select class="choices">
+                                                                    <option value="Отправитель"></option>
+                                                                    <option value="Отправитель"></option>
+                                                                    <option value="Отправитель"></option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="select">
+                                                                <select class="choices">
+                                                                    <option value="Наличная"></option>
+                                                                    <option value="Наличная"></option>
+                                                                    <option value="Наличная"></option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="spacer"></tr>
+                                                </table>
+                                            </div>
+                                            
                                         </div>
                                     </div>
-                                    <div class="dec-new__form_body_part_grid">
-                                        <div class="dec-new__form_body_part_grid_item input">
-                                            <div class="name">ИНН</div>
-                                            <input value="456789169541" readonly type="text">
-                                        </div>
-                                        <div class="dec-new__form_body_part_grid_item input">
-                                            <div class="name">Наименование</div>
-                                            <input value="ООО «Компани два»" readonly type="text">
-                                        </div>
-                                        <div class="dec-new__form_body_part_grid_item input">
-                                            <div class="name">Номер телефона</div>
-                                            <input value="+7 (4512) 456-15-45" readonly type="text">
-                                        </div>
-                                        <div class="dec-new__form_body_part_grid_item input">
-                                            <div class="name">Контактное лицо</div>
-                                            <input value="Крошкин Р.А." readonly type="text">
-                                        </div>
-                                    </div>
+                                    
                                     <div class="dec-new__form_body_part_add">
                                         <button>Добавить контакное лицо</button>
                                     </div>
                                    
                                 </div>
 
-                                <div class="dec-new__form_body_part third__part">
-                                    <div class="dec-new__form_body_part_title">
-                                        ТРЕТЬЕ ЛИЦО
-                                    </div>
-                                    <div class="dec-new__form_body_part_row">
-                                        <div class="dec-new__form_body_part_row_item w-100 select">
-                                            <div class="head">
-                                                <div class="name">Выбрать из списка</div>
-                                                <div class="ex">Нет в списке?</div>
-                                            </div>
-
-                                            <select class="choices" name="" id="">
-                                                <option value="Выберите из списка"></option>
-                                                <option value="Выберите из списка"></option>
-                                                <option value="Выберите из списка"></option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                                 <div class="dec-new__content_action">
                                     <button class="button">продолжить</button>
                                     <button class="button-l">отменить</button>

@@ -16,7 +16,7 @@
     &__main {
         display: none;
         justify-content: space-between;
-        max-width: 1300px;
+        max-width: 1920px;
         gap: 30px;
         width: 100%;
         align-items: flex-start;
@@ -50,24 +50,17 @@
 
                 &:after {
                     position: absolute;
-                    // 
-                    content: '';
+                    content: url('../img/radio.svg');
                     top: 0;
                     left: 0;
-                    width: 20px;
-                    height: 20px;
-                    border: 2px solid #ECECEC;
-                    border-radius: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    
                 }
             }
 
             &_item.active {
 
                 &:after {
-                    content: url('../img/radio.svg');
+                    content: url('../img/radio-ch.svg');
                 }
             }
         }
@@ -113,12 +106,12 @@
     &__form {
         
         &_body {    
-            max-width: 833px;
+            // max-width: 833px;
             width: 100%;
 
 
             &_part.third__part {
-                display: none;
+                // display: none;
             }
             &_part {    
                 margin-bottom: 100px;
@@ -268,6 +261,38 @@
                         line-height: 20px;
                         text-transform: uppercase;
                         color: $blue;
+                    }
+                }
+
+                &_table {
+                    // height: 500px;
+                    width: 100%;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    margin-bottom: 30px;
+                    
+                    tr {
+                        
+                        th {
+                            padding: 12px 11px;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 17px;
+                            text-transform: lowercase;
+                            text-align: left;
+                        }
+                        td {
+                            padding: 11px;
+                            
+                        }
+                    }
+
+                    .spacer {
+                        height: 12px;
+                    }
+
+                    tr[class="def"] {
+                        border: 2px solid #ECECEC;
                     }
                 }
             }

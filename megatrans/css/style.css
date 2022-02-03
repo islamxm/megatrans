@@ -574,7 +574,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1300px;
+  max-width: 1920px;
   gap: 30px;
   width: 100%;
   -webkit-box-align: start;
@@ -613,25 +613,12 @@ body {
 }
 .dec-new__content_top_item:after {
   position: absolute;
-  content: "";
+  content: url("../img/radio.svg");
   top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #ECECEC;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .dec-new__content_top_item.active:after {
-  content: url("../img/radio.svg");
+  content: url("../img/radio-ch.svg");
 }
 .dec-new__content_more {
   display: -webkit-box;
@@ -668,11 +655,7 @@ body {
   padding-right: 10px;
 }
 .dec-new__form_body {
-  max-width: 833px;
   width: 100%;
-}
-.dec-new__form_body_part.third__part {
-  display: none;
 }
 .dec-new__form_body_part {
   margin-bottom: 100px;
@@ -823,6 +806,29 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   color: #1D327B;
+}
+.dec-new__form_body_part_table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 30px;
+}
+.dec-new__form_body_part_table tr th {
+  padding: 12px 11px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: lowercase;
+  text-align: left;
+}
+.dec-new__form_body_part_table tr td {
+  padding: 11px;
+}
+.dec-new__form_body_part_table .spacer {
+  height: 12px;
+}
+.dec-new__form_body_part_table tr[class=def] {
+  border: 2px solid #ECECEC;
 }
 .dec-new__form_body_ex_title {
   font-weight: 600;
@@ -1370,7 +1376,7 @@ body {
   border-spacing: 15px;
   border-collapse: collapse;
   display: none;
-  max-width: 1300px;
+  max-width: 1920px;
   width: 100%;
 }
 .table td, .table th {
@@ -1489,26 +1495,13 @@ body {
   font-weight: 500;
 }
 .radio-tabs__item:after {
-  content: "";
+  content: url("../img/radio.svg");
   position: absolute;
   top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #ECECEC;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .radio-tabs__item.active:after {
-  content: url("../img/radio.svg");
+  content: url("../img/radio-ch.svg");
 }
 
 .radio-content__item {
