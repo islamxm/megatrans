@@ -1,0 +1,79 @@
+@media (max-width: 1500px) {
+
+    .dec-new {
+        padding: 50px 30px;
+    }
+}
+
+
+@media (max-width: 1250px) {
+
+    .dec-new {
+        
+        
+        &__form {
+
+            &_body {
+                max-width: 600px;
+
+
+                &_ex {
+                    &_list {
+                        flex-direction: column;
+                    }
+
+                    &_item {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            &_info {
+                max-width: 307px;
+
+                &_panel {
+                    padding: 26px;
+
+                    &_title {
+                        margin-bottom: 30px;
+                    }
+                    &_item {
+
+                        .name {
+                            font-size: 14px;
+                        }
+
+                        .value {
+                            font-size: 14px;
+                        }
+                    }
+
+                    &_total {
+                        padding: 14px 0;
+
+                        .name {
+                            font-size: 14px;
+                        }
+
+                        .value {
+                            font-size: 14px;
+                        }
+                    }
+
+                    &_timeline {
+
+                        .steps {
+
+                            .step {
+                                padding-bottom: 22px;
+
+                                .name, .dat {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

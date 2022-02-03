@@ -447,7 +447,7 @@ body {
   gap: 3.5%;
 }
 .cp {
-  padding: 114px 50px 50px 83px;
+  padding: 114px 40px 50px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -511,7 +511,7 @@ body {
 }
 
 .dec {
-  padding: 114px 50px 50px 83px;
+  padding: 114px 40px 50px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -550,7 +550,7 @@ body {
 }
 
 .dec-new {
-  padding: 114px 50px 50px 83px;
+  padding: 114px 40px 50px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1435,6 +1435,9 @@ body {
 .table__row:hover .table__row_item .name {
   color: #fff;
 }
+.table__row:hover .table__row_item button svg path {
+  fill: #fff;
+}
 .table__row_item.center {
   vertical-align: middle;
   padding: 25px 16px;
@@ -1727,7 +1730,7 @@ body {
     padding: 10px 20px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .aside {
     width: auto;
   }
@@ -1758,6 +1761,65 @@ body {
 @media (max-width: 1275px) {
   .partners__content {
     margin-top: 40px;
+  }
+}
+@media (max-width: 1500px) {
+  .dec-new {
+    padding: 50px 30px;
+  }
+}
+@media (max-width: 1250px) {
+  .dec-new__form_body {
+    max-width: 600px;
+  }
+  .dec-new__form_body_ex_list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dec-new__form_body_ex_item {
+    margin-bottom: 15px;
+  }
+  .dec-new__form_info {
+    max-width: 307px;
+  }
+  .dec-new__form_info_panel {
+    padding: 26px;
+  }
+  .dec-new__form_info_panel_title {
+    margin-bottom: 30px;
+  }
+  .dec-new__form_info_panel_item .name {
+    font-size: 14px;
+  }
+  .dec-new__form_info_panel_item .value {
+    font-size: 14px;
+  }
+  .dec-new__form_info_panel_total {
+    padding: 14px 0;
+  }
+  .dec-new__form_info_panel_total .name {
+    font-size: 14px;
+  }
+  .dec-new__form_info_panel_total .value {
+    font-size: 14px;
+  }
+  .dec-new__form_info_panel_timeline .steps .step {
+    padding-bottom: 22px;
+  }
+  .dec-new__form_info_panel_timeline .steps .step .name, .dec-new__form_info_panel_timeline .steps .step .dat {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1500px) {
+  .cp {
+    padding: 50px 30px;
+  }
+}
+@media (max-width: 1500px) {
+  .dec {
+    padding: 50px 30px;
   }
 }
 .partner-add__content {
