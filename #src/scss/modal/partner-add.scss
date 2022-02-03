@@ -70,16 +70,12 @@
                 width: 100%;
             }
 
-            a {
+            button {
                 font-size: 14px;
                 line-height: 25px;
                 color: $blue;
                 display: block;
-                margin-top: 8px;
-
-                &:hover {
-                    text-decoration: underline;
-                }
+                text-decoration: underline;
             }
         }
 

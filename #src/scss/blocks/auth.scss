@@ -144,7 +144,7 @@
                 .ex {
                     font-size: 14px;
                     line-height: 25px;
-                    color: blue;
+                    color: $blue;
                     text-decoration: underline;
                 }
             }
@@ -164,7 +164,7 @@
             line-height: 25px;
 
             a {
-                color: blue;
+                color:$blue;
                 text-decoration: underline;
             }
         }

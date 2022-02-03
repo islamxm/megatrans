@@ -6,6 +6,9 @@ import { modals } from './components/modals';
 import { tableHead } from './components/tableHead';
 import { tabsFunc } from './components/tabsFunc';
 import { thirdPart } from './components/thirdPart';
+import { stepChange } from './components/stepChange';
+import { addField } from './components/addField';
+import { addFieldGroup } from './components/addFieldGroup';
 
 document.addEventListener('DOMContentLoaded', () => {
     modals();
@@ -17,7 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
     tabsFunc('.tab-main-wrapper', '.dec-new__content_top', '.dec-new__content_top_item', '.dec-new__content_tab');
     tabsFunc('.tab-wrapper', '.radio-tabs', '.radio-tabs__item', '.radio-content__item');
     thirdPart();
-    
+    stepChange();
+    addField();
+    addFieldGroup();
 });
 
 

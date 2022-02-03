@@ -242,33 +242,27 @@
                         <h2 class="modal__title partner-add__title">
                             Добавить контрагента
                         </h2>
+
+                        
     
                         <form class="partner-add__form">
+                            
                             <div class="partner-add__form_item radio">
-                                <input type="radio" id="yur" name="ent">
+                                <input type="radio" id="yur" name="ent" class="legacyType">
                                 <label for="yur">Юридическое лицо</label>
                             </div>
                             <div class="partner-add__form_item radio">
-                                <input type="radio" id="fiz" name="ent">
+                                <input type="radio" id="fiz" name="ent" class="legacyType">
                                 <label for="fiz">Физическое лицо</label>
                             </div>
-                            <div class="partner-add__form_item select">
-                                <div class="form__name">ИНН</div>
-                                <select name="" id="" class="choices">
-                                    <option value="0123456789"></option>
-                                    <option value="0123456789"></option>
-                                    <option value="0123456789"></option>
-                                    <option value="0123456789"></option>
-                                </select>
+                            
+                            <div class="partner-add__form_item input">
+                                <div class="form__name legacyName">ИНН</div>
+                                <input type="text" placeholder="0123456789">
                             </div>
-                            <div class="partner-add__form_item select">
-                                <div class="form__name">КПП</div>
-                                <select name="" id="" class="choices">
-                                    <option value="123456789"></option>
-                                    <option value="123456789"></option>
-                                    <option value="123456789"></option>
-                                    <option value="123456789"></option>
-                                </select>
+                            <div class="partner-add__form_item input">
+                                <div class="form__name legacyName">КПП</div>
+                                <input type="text" placeholder="123456789">
                             </div>
     
     

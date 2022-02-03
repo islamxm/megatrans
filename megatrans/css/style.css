@@ -205,7 +205,7 @@ body {
 .auth__form_item_head .ex {
   font-size: 14px;
   line-height: 25px;
-  color: blue;
+  color: #1D327B;
   text-decoration: underline;
 }
 .auth__form_btn .button {
@@ -218,7 +218,7 @@ body {
   line-height: 25px;
 }
 .auth__form_q a {
-  color: blue;
+  color: #1D327B;
   text-decoration: underline;
 }
 
@@ -1203,25 +1203,12 @@ body {
 }
 .radio label:after {
   position: absolute;
-  content: "";
+  content: url("../img/radio.svg");
   top: 0;
   left: 0;
-  width: 18px;
-  height: 18px;
-  border: 2px solid #ECECEC;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .radio input:checked ~ label:after {
-  content: url("../img/radio.svg");
+  content: url("../img/radio-ch.svg");
 }
 
 .select {
@@ -1449,7 +1436,7 @@ body {
   padding: 16px;
   font-weight: 500;
   max-width: 256px;
-  vertical-align: top;
+  vertical-align: middle;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1894,14 +1881,11 @@ body {
 .partner-add__form_item input {
   width: 100%;
 }
-.partner-add__form_item a {
+.partner-add__form_item button {
   font-size: 14px;
   line-height: 25px;
   color: #1D327B;
   display: block;
-  margin-top: 8px;
-}
-.partner-add__form_item a:hover {
   text-decoration: underline;
 }
 .partner-add__form_btns {
@@ -2020,6 +2004,29 @@ body {
       flex-wrap: wrap;
   margin-bottom: 38px;
 }
+.partner-edit__form_wr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 38px;
+  width: 100%;
+  position: relative;
+}
+.partner-edit__form_wr_del {
+  position: absolute;
+  top: 43px;
+  right: 10px;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+  cursor: pointer;
+  color: #E30613;
+}
 .partner-edit__form_item {
   width: 49%;
   margin-bottom: 20px;
@@ -2046,6 +2053,27 @@ body {
 }
 .partner-edit__form_add svg path {
   fill: #1D327B;
+}
+.partner-edit__form_file {
+  padding: 15px 20px;
+  display: block;
+  width: 100%;
+  border: 2px solid #ECECEC;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.partner-edit__form_file .icon {
+  margin-right: 22px;
+}
+.partner-edit__form_file .name {
+  font-size: 16px;
+  line-height: 30px;
+  color: #1D327B;
 }
 .partner-edit__form_btns {
   margin-top: 69px;

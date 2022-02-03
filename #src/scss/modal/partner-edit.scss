@@ -22,6 +22,26 @@
         flex-wrap: wrap;
         margin-bottom: 38px;
 
+        &_wr {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 38px;
+            width: 100%;
+            position: relative;
+
+            &_del {
+                position: absolute;
+                top: 43px;
+                right: 10px;
+                text-decoration: underline;
+                text-decoration-style: dashed;
+                cursor: pointer;
+                
+                color: $red;
+            }
+        }
+
         &_item {
             width: 49%;
             margin-bottom: 20px;
@@ -49,6 +69,29 @@
             display: inline-flex;
             align-items: center;
             
+        }
+
+        &_file {
+            padding: 15px 20px;
+            display: block;
+            width: 100%;
+            border: 2px solid #ECECEC;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+
+            .icon {
+                margin-right: 22px;
+
+            }
+
+
+            .name {
+                font-size: 16px;
+                line-height: 30px;
+                color: $blue;
+
+            }
         }
 
         &_btns {
