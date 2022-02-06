@@ -15,7 +15,7 @@ export function decMoreInfo() {
 
         infoClose.addEventListener('click', () => {
             infoEl.classList.remove('active');
-            disablePageScroll(infoEl);
+            enablePageScroll(infoEl);
 
         });
 
