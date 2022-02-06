@@ -1969,10 +1969,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .dec-new__form_body_part_table tr:first-child {
     display: none;
@@ -1980,8 +1978,11 @@ body {
   .dec-new__form_body_part_table tr td {
     width: 100%;
   }
+  .dec-new__form_body_part_table tr td:nth-child(1) {
+    width: 50%;
+  }
   .dec-new__form_body_part_table tr td:nth-child(2) {
-    display: none;
+    width: 50%;
   }
   .dec-new__form_body_part_table tr td:nth-child(3) {
     width: 100% !important;
