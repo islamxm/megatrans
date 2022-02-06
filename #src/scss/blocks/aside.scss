@@ -4,17 +4,30 @@
     top: 0;
     left: 0;
     width: 300px;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 100px;
+    height: 100%;    
+    
+    
     // padding-top: 250px;
+    
 
+    &__mob {
+        padding-top: 230px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 100px;
+        overflow-y: scroll;
+    }
+    &__mob_btn  {
+        display: none;
+    }
 
-
+    &__user {
+        display: none;
+    }
     &__main {
 
         &_nav {

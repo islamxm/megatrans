@@ -92,8 +92,65 @@
             padding: 16px;
             font-weight: 500;
             max-width: 256px;
-            vertical-align: middle;
+            vertical-align: top;
             @include default-anim;
+
+
+
+
+            //MOBILE
+
+            &_drop {
+                display: none;
+                width: 24px;
+                height: 24px;
+                background-color: $blue;
+                position: relative;
+                margin-bottom: 20px;
+                
+                span {
+                    width: 14px;
+                    height: 2px;
+                    position: absolute;
+                    background-color: #fff;
+                    display: block;
+                    @include default-anim;
+
+                    &:nth-child(1) {
+                        top: calc(50% - 1px);
+                        left: calc(50% - 7px);
+                    }
+
+                    &:nth-child(2) {
+                        top: calc(50% - 1px);
+                        left: calc(50% - 7px);
+                        transform: rotate(-90deg);
+                    }
+                }
+
+
+            }
+
+            &_edit {
+                
+            }
+
+
+            &_mob {
+                // height: 0;
+                // overflow: hidden;
+                // @include default-anim;
+                padding-top: 25px;
+                display: none;
+            }
+
+            &_smob {
+                display: none;
+            }
+
+
+
+            //MOBILE END
 
 
             .name {

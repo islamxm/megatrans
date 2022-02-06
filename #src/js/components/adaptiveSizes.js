@@ -9,20 +9,6 @@ export function adaptiveSizes() {
         tablet: 768,
         mobile: 320
     };
-
-
-    if(aside) {
-        aside.style.cssText = `padding-top: ${headerMenu.scrollHeight + 100}px`;
-
-        window.addEventListener('resize', () => {
-            aside.style.cssText = `padding-top: ${headerMenu.scrollHeight + 100}px`;
-        });
-
-
-        
-
-        
-    }
     
     if(modal.length > 0) {
         modal.forEach(modal => {

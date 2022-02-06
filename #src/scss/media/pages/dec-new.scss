@@ -242,6 +242,64 @@
             &_steps {
                 margin-top: 20px;
             }
+
+            &_tab {
+                &:nth-child(2) {
+
+                    .table__headrow {
+                        display: none;
+                    }
+
+                    .table__row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        background-color: #ECECEC;
+                        padding: 15px;
+
+                        &:hover {
+                            background-color: $blue;
+                            border-color: $blue;
+                            
+                            .table__row_item {
+                                color: #fff !important;
+                            }
+                        }
+
+                        &_item {
+                            width: 100%;
+                            max-width: unset;
+                            padding: 0;
+                            
+                            &:nth-child(1) {
+                                font-size: 14px;
+                                line-height: 17px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                order: 1;
+                                margin-bottom: 10px;
+                            }
+
+                            &:nth-child(2) {
+                                font-size: 14px;
+                                line-height: 17px;
+                                order: 3;
+                                font-weight: 400;
+                            }
+
+                            &:nth-child(3) {
+                                order: 2;
+                                font-size: 14px;
+                                line-height: 17px;
+                                font-weight: 400;
+                            }
+
+                            &:nth-child(4) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         &__form {
@@ -252,6 +310,11 @@
                     &_total {
                         max-width: unset;
                     }
+                }
+
+                &_part {
+
+                    
                 }
             }
 
@@ -295,6 +358,8 @@
                 &_part {
                     margin-bottom: 50px;
 
+                   
+
                     &_grid {
                         flex-wrap: wrap;
     
@@ -310,6 +375,16 @@
 
                         &_item {
                             width: 100% !important;
+
+                            label {
+                                font-size: 14px;
+                                line-height: 21px;
+                            }
+                        }
+
+                        &_item.checkbox-big {
+                            font-size: 12px;
+                            line-height: 21px;
                         }
                     }
 
@@ -421,6 +496,35 @@
                 }
 
                 
+            }
+        }
+    }
+}
+
+@media (max-width: 490px) {
+
+    .dec-new {
+
+        &__form {
+
+            &_body {
+
+                &_part {
+
+                    .details {
+
+                        &__item {
+
+                            &_row {
+
+                                .name {
+
+                                }
+                                
+                            }
+                        }
+                    }
+                }
             }
         }
     }

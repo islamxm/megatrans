@@ -10,6 +10,8 @@ import { stepChange } from './components/stepChange';
 import { addField } from './components/addField';
 import { addFieldGroup } from './components/addFieldGroup';
 import { decMoreInfo } from './components/decMoreInfo';
+import { tableDrop } from './components/tableDrop';
+import { mobMenu } from './components/mobMenu';
 
 document.addEventListener('DOMContentLoaded', () => {
     modals();
@@ -25,6 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     addField();
     addFieldGroup();
     decMoreInfo();
+    tableDrop();
+    mobMenu();
 });
 
 
