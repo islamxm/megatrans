@@ -16,13 +16,14 @@
 
         &_add {
             position: relative;
-            padding-left: 80px !important;
+            padding-left: 65px !important;
             padding-right: 65px !important;
-            &:after {
-                content: url('../img/add.svg');
-                position: absolute;
-                top: calc(50% - 12px);
-                left: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                margin-right: 10px;
             }
         }   
     }

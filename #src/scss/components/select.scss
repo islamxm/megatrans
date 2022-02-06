@@ -13,7 +13,16 @@
         }
 
         &__list {
-            top: calc(100% + 1px);
+            // top: calc(100% + 1px);
+
+            
+        }
+
+        &__list--dropdown {
+            .choices__item--selectable {
+                padding: 10px !important;
+                // padding-right: 0;
+            }
         }
     }
 

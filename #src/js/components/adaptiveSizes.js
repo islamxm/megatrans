@@ -10,13 +10,6 @@ export function adaptiveSizes() {
         mobile: 320
     };
 
-    if(mainW) {
-        mainW.style.cssText = `margin-top: ${headerMenu.scrollHeight}px; padding-left: ${aside.scrollWidth}px`;
-
-        window.addEventListener('resize', () => {
-            mainW.style.cssText = `margin-top: ${headerMenu.scrollHeight}px; padding-left: ${aside.scrollWidth}px`;
-        });
-    }
 
     if(aside) {
         aside.style.cssText = `padding-top: ${headerMenu.scrollHeight + 100}px`;
@@ -24,6 +17,9 @@ export function adaptiveSizes() {
         window.addEventListener('resize', () => {
             aside.style.cssText = `padding-top: ${headerMenu.scrollHeight + 100}px`;
         });
+
+
+        
 
         
     }
@@ -33,6 +29,10 @@ export function adaptiveSizes() {
             modal.style.cssText = `padding-top: ${headerMenu.scrollHeight + 25}px`;
         });
     }
+
+
+    
+    
 
 
 

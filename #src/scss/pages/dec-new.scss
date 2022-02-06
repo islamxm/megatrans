@@ -105,6 +105,9 @@
 
     &__form {
         
+        &_more {
+            display: none;
+        }
         &_body {    
             // max-width: 833px;
             width: 100%;
@@ -339,6 +342,9 @@
             max-width: 380px;
             width: 100%;
             
+            &_close {
+                display: none;
+            }
 
             &_panel {
                 margin-bottom: 46px;

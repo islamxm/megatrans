@@ -9,6 +9,7 @@ import { thirdPart } from './components/thirdPart';
 import { stepChange } from './components/stepChange';
 import { addField } from './components/addField';
 import { addFieldGroup } from './components/addFieldGroup';
+import { decMoreInfo } from './components/decMoreInfo';
 
 document.addEventListener('DOMContentLoaded', () => {
     modals();
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     stepChange();
     addField();
     addFieldGroup();
+    decMoreInfo();
 });
 
 

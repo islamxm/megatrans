@@ -1,0 +1,17 @@
+@media (max-width: 800px) {
+
+    .title {
+        width: 100%;
+        height: 101px;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background: linear-gradient(122.57deg, #1D327B 20.21%, #E30613 100%);
+        color: #fff;
+        margin-bottom: 25px;
+
+        font-size: 22px;
+        line-height: 27px;
+    }
+}

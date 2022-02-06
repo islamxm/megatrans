@@ -5,3 +5,59 @@
         padding: 50px 30px;
     }
 }
+
+
+@media (max-width: 800px) {
+
+    .cp {
+        padding: 0;
+        padding-bottom: 30px;
+
+        &__title {
+            order: 1;
+        }
+
+        &__content {
+            margin-top: 0;
+            order: 2;
+            padding: 0 20px;
+
+            &_top {
+                flex-direction: column;
+                gap: 7px;
+                margin-bottom: 40px;
+
+                &_item {
+                    width: 100%;
+                }
+            }
+        }
+
+        &__action {
+            margin-top: 30px;
+            order: 3;
+            padding: 0 20px;
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+
+            button {
+                width: 100%;
+            }
+
+            .button {
+                order: 1;
+                font-size: 14px;
+                line-height: 17px;
+
+            }
+
+            .button-l {
+                order: 2;
+                font-size: 14px;
+                line-height: 17px;
+                
+            }
+        }
+    }
+}
