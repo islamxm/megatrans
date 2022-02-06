@@ -71,19 +71,12 @@
                             td {
                                 width: 100%;
 
-                                &:nth-child(1) {
-                                    width: 50%;
-                                }
 
                                 &:nth-child(2) {
-                                    width: 50%;
-                                }
-
-                                &:nth-child(3) {
                                     width: 100% !important;
                                 }
 
-                                &:nth-child(4) {
+                                &:nth-child(3) {
                                     width: 100% !important; 
                                 }
                             }

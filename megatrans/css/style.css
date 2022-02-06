@@ -1978,16 +1978,10 @@ body {
   .dec-new__form_body_part_table tr td {
     width: 100%;
   }
-  .dec-new__form_body_part_table tr td:nth-child(1) {
-    width: 50%;
-  }
   .dec-new__form_body_part_table tr td:nth-child(2) {
-    width: 50%;
-  }
-  .dec-new__form_body_part_table tr td:nth-child(3) {
     width: 100% !important;
   }
-  .dec-new__form_body_part_table tr td:nth-child(4) {
+  .dec-new__form_body_part_table tr td:nth-child(3) {
     width: 100% !important;
   }
   .dec-new__form_body_ex_list {

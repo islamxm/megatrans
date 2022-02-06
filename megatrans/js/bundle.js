@@ -14,7 +14,7 @@
 /*!*******************************************!*\
   !*** ./#src/js/components/decMoreInfo.js ***!
   \*******************************************/
-/*! exports provided: decMoreInfo */function(e,t,i){"use strict";i.r(t),i.d(t,"decMoreInfo",(function(){return o}));var n=i(/*! scroll-lock */"./node_modules/scroll-lock/dist/scroll-lock.js");function o(){const e=document.querySelector(".dec-new__form_info"),t=document.querySelector(".dec-new__form_more"),i=document.querySelector(".dec-new__form_info_close");t&&(t.addEventListener("click",()=>{e.classList.add("active"),Object(n.disablePageScroll)(document.body)}),i.addEventListener("click",()=>{e.classList.remove("active"),Object(n.enablePageScroll)(document.body)}))}},"./#src/js/components/dropFiles.js":
+/*! exports provided: decMoreInfo */function(e,t,i){"use strict";i.r(t),i.d(t,"decMoreInfo",(function(){return o}));var n=i(/*! scroll-lock */"./node_modules/scroll-lock/dist/scroll-lock.js");function o(){const e=document.querySelector(".dec-new__form_info"),t=document.querySelector(".dec-new__form_more"),i=document.querySelector(".dec-new__form_info_close");document.querySelector(".wrapper");t&&(t.addEventListener("click",()=>{e.classList.add("active"),Object(n.disablePageScroll)(document.body),Object(n.enablePageScroll)(e)}),i.addEventListener("click",()=>{e.classList.remove("active"),Object(n.enablePageScroll)(document.body)}))}},"./#src/js/components/dropFiles.js":
 /*!*****************************************!*\
   !*** ./#src/js/components/dropFiles.js ***!
   \*****************************************/
