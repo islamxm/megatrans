@@ -1,0 +1,9 @@
+@media (max-width: 800px) {
+
+    .filter__content {
+
+        &_in {
+            max-width: unset;
+        }
+    }
+}

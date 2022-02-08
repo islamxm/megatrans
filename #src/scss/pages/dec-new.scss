@@ -4,8 +4,16 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+
+    &__action {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
     &__title {
-        width: 100%;
+        width: 50%;
         margin-bottom: 90px;
     }
 

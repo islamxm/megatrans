@@ -2,7 +2,7 @@
 /*!*********************************************!*\
   !*** ./#src/js/components/adaptiveSizes.js ***!
   \*********************************************/
-/*! exports provided: adaptiveSizes */function(e,t,i){"use strict";function n(){document.querySelector(".main-w");const e=document.querySelector(".header__menu"),t=(document.querySelector(".aside"),document.querySelectorAll(".modal__content"));t.length>0&&t.forEach(t=>{t.style.cssText=`padding-top: ${e.scrollHeight+25}px`})}i.r(t),i.d(t,"adaptiveSizes",(function(){return n}))},"./#src/js/components/addField.js":
+/*! exports provided: adaptiveSizes */function(e,t,i){"use strict";function n(){document.querySelector(".main-w"),document.querySelector(".header__menu"),document.querySelector(".aside"),document.querySelectorAll(".modal__content")}i.r(t),i.d(t,"adaptiveSizes",(function(){return n}))},"./#src/js/components/addField.js":
 /*!****************************************!*\
   !*** ./#src/js/components/addField.js ***!
   \****************************************/
@@ -22,7 +22,7 @@
 /*!***************************************!*\
   !*** ./#src/js/components/mobMenu.js ***!
   \***************************************/
-/*! exports provided: mobMenu */function(e,t,i){"use strict";i.r(t),i.d(t,"mobMenu",(function(){return o}));var n=i(/*! scroll-lock */"./node_modules/scroll-lock/dist/scroll-lock.js");function o(){const e=document.querySelector(".aside"),t=document.querySelector(".header__menu_burger");e&&t&&(t.addEventListener("click",()=>{e.classList.add("active"),Object(n.disablePageScroll)(e)}),e.addEventListener("click",t=>{t.target&&t.target.classList.contains("aside")&&(e.classList.remove("active"),Object(n.enablePageScroll)(e))}))}},"./#src/js/components/modals.js":
+/*! exports provided: mobMenu */function(e,t,i){"use strict";i.r(t),i.d(t,"mobMenu",(function(){return o}));var n=i(/*! scroll-lock */"./node_modules/scroll-lock/dist/scroll-lock.js");function o(){const e=document.querySelector(".aside"),t=document.querySelector(".aside__mob"),i=document.querySelector(".header__menu_burger");e&&i&&(i.addEventListener("click",()=>{e.classList.add("active"),Object(n.disablePageScroll)(t)}),e.addEventListener("click",i=>{i.target&&i.target.classList.contains("aside")&&(e.classList.remove("active"),Object(n.enablePageScroll)(t))}))}},"./#src/js/components/modals.js":
 /*!**************************************!*\
   !*** ./#src/js/components/modals.js ***!
   \**************************************/

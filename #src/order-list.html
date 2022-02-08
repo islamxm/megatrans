@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body >
+    <div class="wrapper">
+        @@include('./blocks/header-menu.html')
+        <main class="main main-w">
+            @@include('./blocks/aside.html')
+            <div class="dec-new" id="order-rds">
+                <h2 class="dec-new__title title">Новая заявка</h2>
+                <div class="dec-new__action">
+                    <button data-micromodal-trigger="filterM" class="button-l">
+                        фильтр
+                    </button>
+                </div>
+                <div class="dec-new__content">
+                    <!-- def form -->
+                    
+                    <div class="dec-new__content_tab active dec-new__main">
+                        <div class="order-item__content">
+                            <table class="table">
+                                <tr class="table__headrow mob-hide-ex">
+                                    <th class="table__headrow_item">
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        ДАТА ЗАЯВКИ
+                                    </th>
+                                    <th class="table__headrow_item">
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        НОМЕР ЗАКАЗА
+                                    </th>
+                                    <th class="table__headrow_item">
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        ГОРОД НАЗНАЧЕНИя
+                                    </th>
+                                    <th class="table__headrow_item mob-hide">
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        получатель
+                                    </th>
+                                    <th class="table__headrow_item mob-hide">
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        плательщик
+                                    </th>
+                                    <th class="table__headrow_item mob-hide">
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        форма оплаты
+                                    </th>
+                                    <th class="table__headrow_item">
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        СТАТУС ОБРАЩЕНИЯ
+                                    </th>
+                                </tr>
+                                <tr class="table__row table__row_dropdown">
+                                    <th class="table__row_item">
+                                        Lorem, ipsum.
+                                        <div class="table__row_item_mob">
+                                            Lorem, ipsum.
+                                        </div>
+                                        <div class="table__row_item_smob">
+                                            <div class="table__row_item_smob_i">Lorem, ipsum.</div>
+                                            <div class="table__row_item_smob_i">Lorem, ipsum.</div>
+                                            <div class="table__row_item_smob_i">Lorem, ipsum.</div>
+                                            <div class="table__row_item_smob_i">Lorem, ipsum.</div>
+                                        </div>
+                                    </th>
+                                    <th class="table__row_item mob-hide-ex">
+                                        Lorem, ipsum.
+                                        <div class="table__row_item_mob">
+                                            Lorem, ipsum.
+                                        </div>
+                                    </th>
+                                    <th class="table__row_item mob-hide-ex">
+                                        Lorem, ipsum.
+                                        <div class="table__row_item_mob">
+                                            Lorem, ipsum.
+                                        </div>
+                                    </th>
+                                    <th class="table__row_item mob-hide">
+                                        Lorem, ipsum.
+
+                                    </th>
+                                    <th class="table__row_item mob-hide">
+                                        Lorem, ipsum.
+
+                                    </th>
+                                    <th class="table__row_item mob-hide">
+                                        Lorem, ipsum.
+
+                                    </th>
+                                    <th class="table__row_item table__row_item_action">
+                                        <button class="table__row_item_drop" data-table-drop>
+                                            <span data-table-drop></span>
+                                            <span data-table-drop></span>
+                                        </button>
+                                        <button class="table__row_item_edit name">
+                                            ОБРАБОТАНО
+                                        </button>
+                                    </th>
+                                </tr>
+                                <tr class="spacer"></tr>
+                                
+                            </table>
+                        </div>
+                        
+
+                        
+                        
+                    </div>
+                    
+
+                   
+
+                    
+                </div>
+                
+            </div>
+        </main>
+    </div>
+
+    @@include('./modal/order-edit.html')
+    @@include('./modal/filter.html')
+    @@include('./modal/order-problem.html')
+    @@include('./modal/order-check.html')
+
+    <!-- @@include('./modal/partner-edit.html') -->
+    
+    <script src="./js/bundle.js"></script>
+</body>
+</html>

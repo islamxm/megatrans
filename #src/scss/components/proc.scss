@@ -1,0 +1,63 @@
+.proc {
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 48px;
+
+        &_title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 23px;
+            text-transform: uppercase;
+        }
+
+        &_status {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    &__content {
+
+        &_row   {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            &_item {
+                width: 48%;
+                .name {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                }
+
+                .value {
+                    padding: 12px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    background-color: #ECECEC;;
+                }
+            }
+        }
+
+
+        .table {
+
+            &__row {
+                background-color: #ECECEC;
+
+                &:hover {
+                    background-color: #ECECEC;
+                    .table__row_item {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

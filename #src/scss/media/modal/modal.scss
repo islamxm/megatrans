@@ -1,0 +1,32 @@
+@media (max-width: 800px) {
+
+    .modal {
+        width: 100%;
+
+        &__title {
+            padding: 0 20px;
+            height: 101px;  
+            display: flex;
+            align-items: center;
+            background: linear-gradient(122.57deg, #1D327B 20.21%, #E30613 100%);
+            color: #fff !important;
+            margin-bottom: 25px;
+        }
+        
+        &__content {
+            box-shadow: none;
+            padding: 0;
+            padding-bottom: 30px;
+            justify-content: center;
+
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .modal {
+
+
+    }
+}

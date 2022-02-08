@@ -22,6 +22,7 @@
 @import './pages/cp.scss';
 @import './pages/dec.scss';
 @import './pages/dec-new.scss';
+@import './pages/order-item.scss';
 
 
 
@@ -40,6 +41,9 @@
 @import './components/date.scss';
 @import './components/radio-tabs.scss';
 @import './components/textarea.scss';
+@import './components/def.scss';
+@import './components/payer.scss';
+@import './components/proc.scss';
 
 //MEDIA
 
@@ -52,6 +56,9 @@
 @import './media/components/button.scss';
 @import './media/components/input.scss';
 @import './media/components/textarea.scss';
+@import './media/components/def.scss';
+@import './media/components/payer.scss';
+@import './media/components/proc.scss';
 
 
 //blocks
@@ -74,9 +81,15 @@
 
 
 //MODAL 
+
 @import './modal/partner-add.scss';
 @import './modal/partner-edit.scss';
+@import './modal/filter.scss';
+@import './modal/app-error.scss';
 
 
 //modal 
+@import './media/modal/modal.scss';
 @import './media/modal/partner-add.scss';
+@import './media/modal/partner-edit.scss';
+@import './media/modal/filter.scss';

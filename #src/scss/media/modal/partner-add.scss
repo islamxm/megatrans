@@ -27,3 +27,146 @@
         }
     }
 }
+
+@media (max-width: 800px) {
+
+    .partner-add {
+
+        &__download {
+            padding: 0 20px;
+        }
+        &__answer {
+            margin: 0 20px;
+            margin-bottom: 30px;
+        }
+
+        .app__btn {
+            padding: 0 20px;
+    
+            button {
+                width: 100%;
+            }
+        }
+
+        
+        &__descr {
+            padding: 0 20px;
+        }
+        &__content {
+
+            &_in {
+                max-width: unset;
+                
+                height: 100%;
+            }
+        }
+
+        &__form {
+            padding: 0 20px;
+
+            &_drop {
+                margin-bottom: 40px;
+            }
+        }
+
+        &__info {
+            padding: 0 20px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .partner-add {
+
+        &__content {
+            &_in {
+
+            }
+        }
+
+        &__form {
+            flex-wrap: wrap;
+            margin-bottom: 21px;
+
+            &_item {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            &_item.addEmail {
+                order: 1;
+            }
+
+            &_item.addTel {
+                order: 3
+            }
+
+            &_item.addEmailBtn {
+                order: 2;
+            }
+
+            &_item.addTelBtn {
+                order: 4;
+            }
+
+            &_btns {
+                margin-top: 50px;
+                flex-wrap: wrap;
+                order: 100;
+
+                button {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .partner-add {
+
+        &__content {
+
+        }
+
+        &__form {
+
+            &_item {
+                label {
+                    font-size: 14px;
+                    line-height: 30px;
+                }
+            }
+
+            .form__name {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            &_item.input {
+
+                input {
+                    font-size: 14px;
+
+                    line-height: 17px;
+                }
+            }
+
+            &_btns {
+
+
+            }
+
+            
+        }
+
+        &__info {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}

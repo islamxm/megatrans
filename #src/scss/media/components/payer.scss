@@ -1,0 +1,71 @@
+@media (max-width: 800px) {
+
+    .payer {
+
+        &__content {
+
+
+            .table {
+
+                &__headrow {
+                    display: none;
+                }
+
+                &__row {
+                    display: flex;
+                    flex-direction: column;
+
+                    &_item {
+                        width: 100%;
+                        max-width: unset;
+
+                        select {
+                            
+                        }
+                    }
+                }
+            }
+
+
+            &_btns {
+                flex-direction: column;
+
+                button {
+                    width: 100%;
+                    
+
+                    &:nth-child(1) {
+                        margin: 0;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .payer {
+
+        &__title {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__content {
+
+            .table {
+
+                &__row {
+
+                    &_item {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

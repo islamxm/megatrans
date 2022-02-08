@@ -103,3 +103,23 @@ body {
         width: 100%;
     }
 }
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#appeal {
+
+    .table {
+
+        &__row {
+            &_item {
+
+                .name {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

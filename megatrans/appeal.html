@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body >
+    <div class="wrapper">
+        <header class="header__menu">
+    <div class="header__menu_in">
+        <a href="#" class="header__logo">
+            <img src="./img/logo.svg" alt="">
+        </a>
+
+        <a href="#" class="header__menu_user">
+            <div class="header__menu_user_prof">
+                <img src="./img/user-prof.svg" alt="">
+            </div>
+            <div class="header__menu_user_name">
+                Константин Константинопольский
+            </div>
+            <div class="header__menu_user_icon">
+                <img src="./img/user-login.svg" alt="">
+            </div>
+        </a>
+
+        <div class="header__menu_burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+        <main class="main main-w">
+            <aside class="aside">
+    <div class="aside__mob">
+        <a href="#" class="aside__user">
+            Константин Константинопольский
+        </a>
+        <div class="aside__main">
+            <ul class="aside__main_nav">
+                <li class="aside__main_nav_item active">
+                    <a href="#" class="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 2H6C4.896 2 4 2.896 4 4V7H2V9H4V11H2V13H4V15H2V17H4V20C4 21.104 4.896 22 6 22H21C21.553 22 22 21.553 22 21V3C22 2.447 21.553 2 21 2ZM13 4.999C14.648 4.999 16 6.35 16 7.999C16 9.647 14.648 11 13 11C11.353 11 10 9.647 10 7.999C10 6.35 11.353 4.999 13 4.999ZM19 18H7V17.25C7 15.031 9.705 12.75 13 12.75C16.295 12.75 19 15.031 19 17.25V18Z" fill="white"/>
+                            </svg>
+                            
+                        <span>Мои контрагенты</span></a>
+                </li>
+                <li class="aside__main_nav_item">
+                    <a href="#" class="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.027 8.03308C14.7517 10.4277 13.8183 13.0131 11.7294 14.3971C13.4634 15.0352 14.9621 16.1837 16.027 17.6906C16.19 17.9215 16.2104 18.2237 16.0801 18.4744C15.9497 18.725 15.6902 18.8823 15.4071 18.8823L1.75828 18.8829C1.47518 18.8829 1.21565 18.7256 1.08524 18.4749C0.954832 18.2243 0.975266 17.9221 1.13823 17.6912C2.20309 16.184 3.702 15.0353 5.43628 14.3971C3.34738 13.0131 2.41395 10.4277 3.13865 8.03308C3.86334 5.63846 6.07507 4 8.58282 4C11.0906 4 13.3023 5.63846 14.027 8.03308ZM21.4726 7.30772C22.6404 9.8439 21.7852 12.8506 19.456 14.3971C21.1901 15.0352 22.6888 16.1837 23.7536 17.6906C23.9166 17.9215 23.9371 18.2237 23.8067 18.4743C23.6763 18.725 23.4169 18.8823 23.1338 18.8823L18.8951 18.8829C18.6006 18.8829 18.3326 18.7128 18.208 18.4465C17.6254 17.2007 16.8052 16.0799 15.7931 15.1467C15.778 15.1327 15.7643 15.118 15.7506 15.1032C15.4859 14.8622 15.2093 14.6345 14.9219 14.4211C14.6069 14.1874 14.5228 13.7527 14.728 13.4189C16.2618 10.921 16.1176 7.74356 14.364 5.39396C14.2149 5.19423 14.174 4.93413 14.2545 4.69844C14.335 4.46275 14.5266 4.28168 14.7669 4.21426C17.4607 3.45957 20.3047 4.77155 21.4726 7.30772Z" fill="white"/>
+                            </svg>
+                            
+                        <span>Мои партнеры</span></a>
+                </li>
+                <li class="aside__main_nav_item">
+                    <a href="#" class="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 3H4C2.896 3 2 3.896 2 5V19C2 20.104 2.896 21 4 21H20C21.104 21 22 20.104 22 19V5C22 3.896 21.104 3 20 3ZM11 17H5V15H11V17ZM19 13H5V11H19V13ZM19 9H5V7H19V9Z" fill="white"/>
+                            </svg>
+                            
+                        <span>Мои заявки</span></a>
+                </li>
+                <li class="aside__main_nav_item">
+                    <a href="#" class="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.148 7.971C18.789 7.372 18.132 7 17.434 7H15V5C15 4.447 14.553 4 14 4H4C2.897 4 2 4.897 2 6V16C2 16.746 2.416 17.391 3.023 17.734C3.146 19.553 4.65 21 6.5 21C8.259 21 9.704 19.691 9.949 18H13.051C13.296 19.691 14.741 21 16.5 21C18.259 21 19.704 19.691 19.949 18H20C21.103 18 22 17.103 22 16V13C22 12.818 21.951 12.641 21.857 12.485L19.148 7.971ZM15 9H17.434L19.234 12H15V9ZM6.5 19C5.673 19 5 18.327 5 17.5C5 16.673 5.673 16 6.5 16C7.327 16 8 16.673 8 17.5C8 18.327 7.327 19 6.5 19ZM16.5 19C15.673 19 15 18.327 15 17.5C15 16.673 15.673 16 16.5 16C17.327 16 18 16.673 18 17.5C18 18.327 17.327 19 16.5 19Z" fill="white"/>
+                            </svg>
+                            
+                        <span>Мои заказы</span></a>
+                </li>
+                <li class="aside__main_nav_item">
+                    <a href="#" class="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7133 9.96615C22.427 9.56926 21.9681 9.33394 21.4793 9.33333H20.2529L20.2392 8.26013C20.2252 7.16563 19.3339 6.28571 18.2394 6.28571H12.4751C12.258 6.28571 12.0468 6.21507 11.8734 6.08444L9.6407 4.40254C9.2939 4.1413 8.8715 4 8.43731 4H4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20H18.5968C19.458 20 20.2224 19.4488 20.4944 18.6318L22.9223 11.339C23.0763 10.8743 22.9986 10.3638 22.7133 9.96615ZM8.25749 5.52381C8.47416 5.52381 8.68496 5.59418 8.85818 5.72432L11.2278 7.50474C11.4915 7.70195 11.8115 7.80883 12.1405 7.80952H17.7318C18.2841 7.80952 18.7318 8.25724 18.7318 8.80952V9.33333H6.35086C5.69595 9.33274 5.11436 9.75267 4.90782 10.3753L3.52108 14.543V6.52381C3.52108 5.97153 3.96879 5.52381 4.52108 5.52381H8.25749Z" fill="white"/>
+                            </svg>
+                            
+                        <span>Документы</span></a>
+                </li>
+                <li class="aside__main_nav_item">
+                    <a href="#" class="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1131 17.1417C23.2813 15.0135 23.2963 12.4606 22.153 10.3196C21.0098 8.17856 18.8557 6.72546 16.3968 6.43648C15.313 3.96537 12.925 2.27316 10.1786 2.03006C7.43221 1.78695 4.77042 3.03217 3.24746 5.27253C1.72449 7.5129 1.58606 10.387 2.88697 12.7565L2.30716 14.7344C2.17615 15.181 2.30391 15.6617 2.64093 15.9902C2.97795 16.3187 3.47124 16.4433 3.92957 16.3157L5.95948 15.7506C6.7809 16.179 7.67719 16.4543 8.60228 16.5622C9.42916 18.4471 11.03 19.9072 13.0148 20.5867C14.9995 21.2661 17.1857 21.1025 19.0407 20.1357L21.0705 20.7008C21.5288 20.8284 22.0221 20.7038 22.3591 20.3754C22.6961 20.047 22.824 19.5663 22.693 19.1197L22.1131 17.1417ZM20.6612 16.675C20.5556 16.848 20.5279 17.0558 20.5847 17.2494L21.1581 19.205L19.1512 18.6463C18.9526 18.591 18.7394 18.618 18.5619 18.7209C17.1753 19.5217 15.5165 19.7454 13.9588 19.3419C12.4012 18.9383 11.0754 17.9413 10.28 16.5753C12.3569 16.3658 14.2498 15.3212 15.5024 13.6933C16.7549 12.0655 17.2534 10.002 16.8777 8.00059C18.7362 8.42838 20.2748 9.69239 21.0218 11.405C21.7687 13.1175 21.6348 15.0742 20.6612 16.675Z" fill="white"/>
+                            </svg>
+                            
+                        <span>Мои обращения</span></a>
+                </li>
+                <li class="aside__main_nav_item">
+                    <a href="#" class="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0418 2.63673C12.4019 2.24609 11.5973 2.24609 10.9574 2.63673L4.84847 6.36637C3.55891 7.15366 3.57448 9.03164 4.87691 9.79744L11.0088 13.4029C11.636 13.7716 12.4138 13.7708 13.0401 13.4006L19.1334 9.79957C20.4324 9.03186 20.4458 7.15704 19.158 6.37077L13.0418 2.63673ZM19.6027 11.4714C20.0828 11.1985 20.6933 11.3666 20.9662 11.8467C21.2195 12.2926 21.0927 12.8508 20.6889 13.1468L20.5908 13.2102L13.9962 16.9576C13.1665 17.4334 12.1538 17.4662 11.296 17.054L11.1146 16.9588L4.59784 13.2075C4.1192 12.9319 3.95454 12.3205 4.23007 11.8419C4.48592 11.3974 5.03136 11.2237 5.4912 11.4218L5.59563 11.4741L12.109 15.2236C12.3493 15.3606 12.6424 15.3775 12.8979 15.2729L13.0048 15.2207L19.6027 11.4714ZM19.5057 15.1312C19.9859 14.8584 20.5963 15.0264 20.8692 15.5066C21.1226 15.9525 20.9958 16.5107 20.5919 16.8066L20.4938 16.8701L13.8993 20.6175C13.0695 21.0933 12.0568 21.126 11.199 20.7138L11.0177 20.6187L4.50088 16.8673C4.02224 16.5918 3.85758 15.9804 4.13311 15.5018C4.38896 15.0573 4.9344 14.8836 5.39424 15.0816L5.49867 15.134L12.0121 18.8834C12.2524 19.0205 12.5454 19.0373 12.8009 18.9328L12.9078 18.8806L19.5057 15.1312Z" fill="white"/>
+                            </svg>
+                            
+                        <span>Преференции</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="aside__mob_btn">
+            <button>выход</button>
+        </div>
+        <div class="aside__bot">
+    
+            <div class="aside__bot_title">
+                МегаТранс
+            </div>
+            <a href="tel:" class="aside__bot_tel">8 800 700 74 55</a>
+            <a href="mailto:" class="aside__bot_mail">mega-trans05@mail.ru</a>
+        </div>
+    </div>
+</aside>
+            <div class="cp" id="appeal">
+                <h2 class="cp__title title">Мои обращения</h2>
+                <div class="cp__action">
+                    <button class="cp__action_btn button-l" data-micromodal-trigger="filterM">фильтр</button>
+                </div>
+                <div class="cp__content">
+
+                    <div class="cp__content_body">
+                        <table class="table active">
+                            <tr class="table__headrow mob-hide-ex">
+                                <th class="table__headrow_item mob-hide">
+                                    ДАТА ЗАПРОСА
+                                    <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </th>
+                                <th class="table__headrow_item">
+                                    НОМЕР Заказа
+                                    <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </th>
+                                <th class="table__headrow_item mob-hide">
+                                    тема обращения
+                                    <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </th>
+                                <th class="table__headrow_item">
+                                    СТАТУС обращения
+                                    <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </th>
+                                <th class="table__headrow_item">
+
+                                </th>
+                            </tr>
+
+                            <tr class="table__row table__row_dropdown">
+                                <td class="table__row_item mob-hide">Lorem, ipsum.</td>
+                                <td class="table__row_item">
+                                    Lorem, ipsum.
+
+                                    <div class="table__row_item_mob">
+                                        Lorem, ipsum.
+                                    </div>
+
+                                    <div class="table__row_item_smob">
+                                        <div class="table__row_item_smob_i">Lorem, ipsum.</div>
+                                        <div class="table__row_item_smob_i">Lorem, ipsum.</div>
+                                    </div>
+
+                                </td>
+                                <td class="table__row_item mob-hide">Lorem, ipsum.</td>
+                                <td class="table__row_item mob-hide-ex">
+                                    <button class="name">
+                                        получен ответ
+                                    </button>
+
+                                    <div class="table__row_item_mob">
+                                        Lorem, ipsum.
+                                    </div>
+                                </td>
+                                
+                                <td class="table__row_item table__row_item_action">
+                                    <button class="table__row_item_drop" data-table-drop>
+                                        <span data-table-drop></span>
+                                        <span data-table-drop></span>
+                                    </button>
+                                    
+                                    <div class="table__row_item_edit">
+                                        <button>
+                                            <img src="./img/mail.svg" alt="">
+                                        </button>
+                                    </div>
+
+                                    
+                                </td>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="modal filter" id="filterM" aria-hidden="true">
+
+    <div class="modal__layer" tabindex="-1" data-micromodal-close>
+
+        <div class="modal__wrapper" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
+
+
+            <!-- 1 step -->
+            <div class="modal__content filter__content" id="modal-1-content">
+                <div class="filter__content_in">
+                    <h2 class="modal__title partner-add__title">
+                        Добавить контрагента
+                    </h2>
+
+                    <form class="partner-add__form">
+                        
+                        <div class="partner-add__form_item w-100 select">
+                            <div class="form__name">Фильтр по контрагенту</div>
+                            <select name="" id="" class="choices">
+                                <option value="Выберите контрагента"></option>
+                                <option value="Выберите контрагента"></option>
+                                <option value="Выберите контрагента"></option>
+                                <option value="Выберите контрагента"></option>
+                            </select>
+                        </div>
+                        <div class="partner-add__form_item">
+                            <div class="form__name">Поиск по дате</div>
+                            <input class="date" type="date">
+                        </div>
+                        <div class="partner-add__form_item select">
+                            <div class="form__name">Поиск по номеру</div>
+                            <select name="" id="" class="choices">
+                                <option value="Введите номер заказа"></option>
+                                <option value="Введите номер заказа"></option>
+                                <option value="Введите номер заказа"></option>
+                                <option value="Введите номер заказа"></option>
+                            </select>
+                        </div>
+                        <div class="partner-add__form_item select">
+                            <div class="form__name">Тип заявки</div>
+                            <select name="" id="" class="choices">
+                                <option value="Выберите тип"></option>
+                                <option value="Выберите тип"></option>
+                                <option value="Выберите тип"></option>
+                                <option value="Выберите тип"></option>
+                            </select>
+                        </div>
+                        <div class="partner-add__form_item select">
+                            <div class="form__name">Статус заявки</div>
+                            <select name="" id="" class="choices">
+                                <option value="Выберите статус"></option>
+                                <option value="Выберите статус"></option>
+                                <option value="Выберите статус"></option>
+                                <option value="Выберите статус"></option>
+                            </select>
+                        </div>
+                        <div class="partner-add__form_item input">
+                            <div class="form__name">Город отправления</div>
+                            <input type="text" placeholder="Укажите город">
+                        </div>
+                        <div class="partner-add__form_item select">
+                            <div class="form__name">Город назначения</div>
+                            <select name="" id="" class="choices">
+                                <option value="Укажите город"></option>
+                                <option value="Укажите город"></option>
+                                <option value="Укажите город"></option>
+                                <option value="Укажите город"></option>
+                            </select>
+                        </div>
+                        <div class="partner-add__form_item input">
+                            <div class="form__name">Город отправления</div>
+                            <input type="text" placeholder="Укажите город">
+                        </div>
+                        <div class="partner-add__form_item select">
+                            <div class="form__name">Город назначения</div>
+                            <select name="" id="" class="choices">
+                                <option value="Укажите город"></option>
+                                <option value="Укажите город"></option>
+                                <option value="Укажите город"></option>
+                                <option value="Укажите город"></option>
+                            </select>
+                        </div>
+                        <div class="partner-add__form_item input">
+                            <div class="form__name">Отправитель</div>
+                            <input type="text" placeholder="Выберите отправителя">
+                        </div>
+                        <div class="partner-add__form_item select">
+                            <div class="form__name">Получатель</div>
+                            <select name="" id="" class="choices">
+                                <option value="Выберите получателя"></option>
+                                <option value="Выберите получателя"></option>
+                                <option value="Выберите получателя"></option>
+                                <option value="Выберите получателя"></option>
+                            </select>
+                        </div>
+                        <div class="partner-add__form_item input">
+                            <div class="form__name">Плательщик</div>
+                            <input type="text" placeholder="Выберите плательщика">
+                        </div>
+                        <div class="partner-add__form_item select">
+                            <div class="form__name">Статус оплаты</div>
+                            <select name="" id="" class="choices">
+                                <option value="Выберите статус"></option>
+                                <option value="Выберите статус"></option>
+                                <option value="Выберите статус"></option>
+                                <option value="Выберите статус"></option>
+                            </select>
+                        </div>
+
+                        <div class="partner-add__form_btns">
+                            <button class="button-l" type="button" data-micromodal-close>свернуть</button>
+                            <button class="button">найти</button>
+                        </div>
+
+                        
+                    </form>
+
+                </div>
+            </div>
+        
+        
+        </div>
+    </div>
+</div>
+    <div class="modal partner-add is-open" id="appError" aria-hidden="true">
+
+    <div class="modal__layer" tabindex="-1" data-micromodal-close>
+
+        <div class="modal__wrapper" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
+
+
+            <!-- 1 step -->
+            <div class="modal__content partner-add__content" id="modal-1-content">
+                <div class="partner-add__content_in">
+                    <h2 class="modal__title partner-add__title">
+                        Не получается запросить 
+                        документы
+                    </h2>
+
+                    <div class="partner-add__descr">
+                        Статус обращения: <b>НА РАССМОТРЕНИИ</b>
+                    </div>
+                    <div class="partner-add__descr">
+                        Дата обращения:  <b>17.07.2021</b>
+                    </div>
+
+                    <div class="partner-add__descr">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                    </div>
+
+                    <a href="#" download="#" class="partner-add__download">
+                        <svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.27273 0C1.47811 0 0 1.47811 0 3.27273V13.0909H2.18182V3.27273C2.18182 2.65861 2.65861 2.18182 3.27273 2.18182H13.0909V8.72727H19.6364V13.0909H21.8182V7.18466L14.6335 0H3.27273ZM15.2727 3.72443L18.0938 6.54545H15.2727V3.72443ZM0 15.2727V26.1818H3.27273C5.06734 26.1818 6.54545 24.7037 6.54545 22.9091V18.5455C6.54545 16.7508 5.06734 15.2727 3.27273 15.2727H0ZM12 15.2727C10.2054 15.2727 8.72727 16.7508 8.72727 18.5455V22.9091C8.72727 24.7037 10.2054 26.1818 12 26.1818C13.7946 26.1818 15.2727 24.7037 15.2727 22.9091V18.5455C15.2727 16.7508 13.7946 15.2727 12 15.2727ZM20.7273 15.2727C18.9327 15.2727 17.4545 16.7508 17.4545 18.5455V20.7273V22.9091C17.4545 24.7037 18.9327 26.1818 20.7273 26.1818C22.5219 26.1818 24 24.7037 24 22.9091H21.8182C21.8182 23.5232 21.3414 24 20.7273 24C20.1132 24 19.6364 23.5232 19.6364 22.9091V20.7273V18.5455C19.6364 17.9313 20.1132 17.4545 20.7273 17.4545C21.3414 17.4545 21.8182 17.9313 21.8182 18.5455H24C24 16.7508 22.5219 15.2727 20.7273 15.2727ZM2.18182 17.4545H3.27273C3.88684 17.4545 4.36364 17.9313 4.36364 18.5455V22.9091C4.36364 23.5232 3.88684 24 3.27273 24H2.18182V17.4545ZM12 17.4545C12.6141 17.4545 13.0909 17.9313 13.0909 18.5455V22.9091C13.0909 23.5232 12.6141 24 12 24C11.3859 24 10.9091 23.5232 10.9091 22.9091V18.5455C10.9091 17.9313 11.3859 17.4545 12 17.4545Z" fill="#1D327B"/>
+                            </svg>
+                            
+                        Прикрепленный документ.doc
+
+                    </a>
+
+                    <div class="partner-add__answer">
+                        <div class="partner-add__answer_title">
+                            ПОЛУЧЕН ОТВЕТ
+                        </div>
+                        <div class="partner-add__answer_text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+
+                    <div class="app__btn" >
+                        <button class="button-l" data-micromodal-close>
+                            закрыть
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            
+        
+        
+        </div>
+    </div>
+</div>
+    
+    
+    <script src="./js/bundle.js"></script>
+</body>
+</html>

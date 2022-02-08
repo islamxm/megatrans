@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body >
+    <div class="wrapper">
+        @@include('./blocks/header-menu.html')
+        <main class="main main-w">
+            @@include('./blocks/aside.html')
+            <div class="dec-new" id="order-rds">
+                <h2 class="dec-new__title title">Новая заявка</h2>
+                <div class="dec-new__action">
+                    <button class="button">
+                        открыть заявку
+                    </button>
+                </div>
+                <div class="dec-new__content">
+                    <!-- def form -->
+                    
+                    <div class="dec-new__content_tab active dec-new__main">
+                        <div class="order-item__content">
+                            <div class="def">
+                                <div class="def__row">
+                                    <div class="def__row_item">
+                                        <div class="def__row_item_name">Статус заказа</div>
+                                        <div class="def__row_item_status">ВЫДАН</div>
+                                    </div>
+                                </div>
+                                <div class="def__row">
+                                    <div class="def__row_item w-half input">
+                                        <div class="def__row_item_name">Дата приема груза</div>
+                                        <div class="def__row_item_value">18.03.2021</div>
+                                    </div>
+                                    <div class="def__row_item w-half input">
+                                        <div class="def__row_item_name">Дата выдачи груза</div>
+                                        <div class="def__row_item_value">18.03.2021</div>
+                                    </div>
+                                </div>
+                                <div class="def__row">
+                                    <div class="def__row_item w-half input">
+                                        <div class="def__row_item_name">Город отправления</div>
+                                        <div class="def__row_item_value">Москва</div>
+                                    </div>
+                                    <div class="def__row_item w-half input">
+                                        <div class="def__row_item_name">Город назначения</div>
+                                        <div class="def__row_item_value">Севастополь</div>
+                                    </div>
+                                </div>
+                                <div class="def__row">
+                                    <div class="def__row_item w-half input">
+                                        <div class="def__row_item_name">Отправитель</div>
+                                        <div class="def__row_item_value">ООО «Компани один»</div>
+                                    </div>
+                                    <div class="def__row_item w-half input">
+                                        <div class="def__row_item_name">Получатель</div>
+                                        <div class="def__row_item_value">Федорчук Ю.А.</div>
+                                    </div>
+                                </div>
+                                <div class="def__row">
+                                    <div class="def__row_item w-half input">
+                                        <div class="def__row_item_name">Вес отправления</div>
+                                        <div class="def__row_item_value">1 кг</div>
+                                    </div>
+                                    <div class="def__row_item w-half input">
+                                        <div class="def__row_item_name">Объем отправлнения</div>
+                                        <div class="def__row_item_value">50 m3 </div>
+                                    </div>
+                                </div>
+        
+                                <div class="def__row btns">
+                                    <div class="def__row_item w-btn">
+                                        <button data-micromodal-trigger="orderEdit" class="button">заявка на изменение</button>
+                                    </div>
+                                    <div class="def__row_item w-btn">
+                                        <button data-micromodal-trigger="orderProblem" class="button-l">ПРОБЛЕМА С ЗАКАЗОМ</button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="payer">
+                                <h3 class="payer__title">
+                                    ПЛАТЕЛЬЩИК
+                                </h3>
+        
+                                <div class="payer__content">
+                                    <table class="table">
+                                        <tr class="table__headrow">
+                                            <th class="table__headrow_item">УСЛУГА</th>
+                                            <th class="table__headrow_item">ПЛАТЕЛЬЩИК</th>
+                                            <th class="table__headrow_item">ФОРМА ОПЛАТЫ</th>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="table__row_item">Межтерминальная перевозка</td>
+                                            <td class="table__row_item select">
+                                                <select class="choices">
+                                                    <option value="Константинопольский К.А."></option>
+                                                    <option value="Константинопольский К.А."></option>
+                                                </select>
+                                            </td>
+                                            <td class="table__row_item select">
+                                                <select class="choices">
+                                                    <option value="Безналичная"></option>
+                                                    <option value="Безналичная"></option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer"></tr>
+                                        <tr class="table__row">
+                                            <td class="table__row_item">Межтерминальная перевозка</td>
+                                            <td class="table__row_item select">
+                                                <select class="choices">
+                                                    <option value="Константинопольский К.А."></option>
+                                                    <option value="Константинопольский К.А."></option>
+                                                </select>
+                                            </td>
+                                            <td class="table__row_item select">
+                                                <select class="choices">
+                                                    <option value="Безналичная"></option>
+                                                    <option value="Безналичная"></option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </table>
+        
+                                    <div class="payer__content_btns">
+                                        <button class="button" data-micromodal-trigger="orderEdit">заявка на изменение</button>
+                                        <button class="button-l" data-micromodal-trigger="orderCheck">ЗАПРОСИТЬ СЧЕТ</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-item__content_more dec-new__form_more">
+                                <button class="button-l">Подробнее</button>
+                            </div>
+                        </div>
+                        
+
+                        
+                        <div class="dec-new__form_info">
+                            <div class="dec-new__form_info_close">
+                                <button>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.88393 8.00002L15.8169 1.06697C16.061 0.822881 16.061 0.427132 15.8169 0.18307C15.5729 -0.0609921 15.1771 -0.0610233 14.933 0.18307L7.99999 7.11612L1.06697 0.18307C0.822881 -0.0610233 0.427132 -0.0610233 0.18307 0.18307C-0.0609921 0.427163 -0.0610233 0.822912 0.18307 1.06697L7.11609 7.99999L0.18307 14.933C-0.0610233 15.1771 -0.0610233 15.5729 0.18307 15.8169C0.305101 15.939 0.465069 16 0.625038 16C0.785006 16 0.944944 15.939 1.06701 15.8169L7.99999 8.88393L14.933 15.8169C15.055 15.939 15.215 16 15.375 16C15.5349 16 15.6949 15.939 15.8169 15.8169C16.061 15.5729 16.061 15.1771 15.8169 14.933L8.88393 8.00002Z" fill="#000"/>
+                                    </svg>
+                                        
+                                </button>
+                            </div>
+                            <div class="dec-new__form_info_panel">
+                                <div class="dec-new__form_info_panel_title">
+                                    СУММА ЗАКАЗА
+                                </div>
+
+                                <div class="dec-new__form_info_panel_list">
+                                    <div class="dec-new__form_info_panel_item">
+                                        <div class="name">Межтерминальная перевозка</div>
+                                        <div class="value">1 000₽</div>
+                                    </div>
+                                    <div class="dec-new__form_info_panel_item">
+                                        <div class="name">Забор груза</div>
+                                        <div class="value">200₽</div>
+                                    </div>
+                                    <div class="dec-new__form_info_panel_item">
+                                        <div class="name">Доставка груза</div>
+                                        <div class="value">560₽</div>
+                                    </div>
+                                    <div class="dec-new__form_info_panel_item">
+                                        <div class="name">Доп услуги</div>
+                                        <div class="value">1 200₽</div>
+                                    </div>
+                                    <div class="dec-new__form_info_panel_item">
+                                        <div class="name">Страхование</div>
+                                        <div class="value">950₽</div>
+                                    </div>
+                                    <div class="dec-new__form_info_panel_item">
+                                        <div class="name">Упаковка</div>
+                                        <div class="value">250₽</div>
+                                    </div>
+                                </div>
+
+                                <div class="dec-new__form_info_panel_total">
+                                    <div class="name">Итого:</div>
+                                    <div class="value">2 960₽</div>
+                                </div>
+
+                                <div class="dec-new__form_info_panel_ex">
+                                    Данная стоимость является ориентировочной. Окончательная стоимость перевозки будет известна после поступления груза на склад отправления
+                                </div>
+                            </div>
+
+                            <div class="dec-new__form_info_panel">
+                                <div class="dec-new__form_info_panel_title">
+                                    ДВИЖЕНИЕ ГРУЗА
+                                </div>
+                                <div class="dec-new__form_info_panel_timeline">
+                                    <div class="steps">
+                                        <div class="step">
+                                            <div class="name">Прием груза</div>
+                                            <div class="dat">18 марта</div>
+                                        </div>
+                                        <div class="step">
+                                            <div class="name">Отправка груза</div>
+                                            <div class="dat">19 марта</div>
+                                        </div>
+                                        <div class="step">
+                                            <div class="name">Прибытие груза</div>
+                                            <div class="dat">21 марта</div>
+                                        </div>
+                                        <div class="step">
+                                            <div class="name">Доставка груза до адреса</div>
+                                            <div class="dat">21 марта</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    
+
+                   
+
+                    
+                </div>
+                
+            </div>
+        </main>
+    </div>
+
+    @@include('./modal/order-edit.html')
+    @@include('./modal/order-problem.html')
+    @@include('./modal/order-check.html')
+
+    <!-- @@include('./modal/partner-edit.html') -->
+    
+    <script src="./js/bundle.js"></script>
+</body>
+</html>

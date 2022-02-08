@@ -1,0 +1,64 @@
+.def {
+    max-width: 1920px;
+    width: 100%;
+    margin-bottom: 70px;
+
+    &__row.btns {
+        justify-content: flex-start;
+        margin-top: 50px;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+
+        &_item.w-half {
+            width: 48%;
+        }
+
+        &_item.w-btn {
+            width: 263px;
+
+            button {
+                width: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                
+            }
+
+            &:nth-child(1) {
+                margin-right: 10px;
+            }
+
+        }
+
+
+        &_item {
+            width: 100%;
+            
+
+            &_status {
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $blue;
+                padding: 12px;
+                border: 1px solid #ECECEC;
+            }
+
+            &_name {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 10px;
+            }
+
+            &_value {
+                padding: 12px;
+                border: 1px solid #ECECEC;
+                font-weight: 500;
+            }
+        }
+    }
+}

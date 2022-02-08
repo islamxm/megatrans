@@ -96,6 +96,18 @@
             @include default-anim;
 
 
+            .checkbox {
+                // height: 26.13px !important;
+                label {
+
+                    &:after {
+                        top: -1px;
+                        left: 4px;
+                    }
+                }
+            }
+
+
 
 
             //MOBILE
@@ -192,5 +204,9 @@
     &__row.blue {
 
         border-left: 7px solid $blue;
+    }
+
+    &__row.orange {
+        border-left: #FFAB49;
     }
 }

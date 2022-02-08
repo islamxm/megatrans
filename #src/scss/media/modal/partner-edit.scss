@@ -1,0 +1,55 @@
+@media (max-width: 800px) {
+
+    .partner-edit {
+
+        &__content {
+
+            &_in {
+                max-width: unset;
+            }
+        }
+
+        &__form {
+            padding: 0 20px;
+            margin-bottom: 0;
+
+            &_item {
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .partner-edit {
+
+        &__content {
+
+        }
+
+        &__form {
+            flex-wrap: wrap;
+
+            &_item {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            &_wr {
+                
+                &_del {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+
+            &_file {
+                
+                .name {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+        }
+    }
+}

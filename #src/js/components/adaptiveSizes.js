@@ -10,11 +10,6 @@ export function adaptiveSizes() {
         mobile: 320
     };
     
-    if(modal.length > 0) {
-        modal.forEach(modal => {
-            modal.style.cssText = `padding-top: ${headerMenu.scrollHeight + 25}px`;
-        });
-    }
 
 
     

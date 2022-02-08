@@ -1,0 +1,35 @@
+.payer {
+    max-width: 1920px;
+    width: 100%;
+    margin-bottom: 70px ;
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 23px;
+        margin-bottom: 40px;
+    }
+
+    &__content {
+        width: 100%;
+
+        .table {
+            display: table;
+        }
+
+        &_btns {
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+
+            button {
+                width: 263px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .button {
+                margin-right: 10px;
+            }
+        }
+    }
+}
