@@ -1056,7 +1056,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px 40px;
+  padding: 15px 20px;
   background-color: #1D327B;
   color: #fff;
   text-transform: uppercase;
@@ -1065,6 +1065,9 @@ body {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+.button svg {
+  margin-right: 10px;
 }
 .button:hover {
   background-color: #142358;
@@ -1359,7 +1362,7 @@ body {
   border: none;
 }
 .select .choices.is-open .choices__list--dropdown input {
-  height: 47px;
+  height: 45px;
   border: 2px solid #1D327B !important;
 }
 .select .choices.is-open .choices__list--dropdown .choices__list {

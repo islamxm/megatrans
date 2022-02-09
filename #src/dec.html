@@ -24,8 +24,14 @@
             <div class="dec" id="dec">
                 <h2 class="dec__title title">Мои партнеры</h2>
                 <div class="dec__action">
-                    <button class="cp__action_btn button-l">фильтр</button>
-                    <button class="cp__action_btn button">создать заявку</button>
+                    <button class="cp__action_btn button-l" data-micromodal-trigger="filterM">фильтр</button>
+                    <button class="cp__action_btn button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 11H13V5H11V11H5V13H11V19H13V13H19V11Z" fill="white"/>
+                            </svg>
+                            
+                        создать заявку
+                    </button>
                 </div>
                 <div class="dec__content">
                     <div class="dec__content_top">
@@ -124,6 +130,7 @@
     </div>
 
 
+    @@include('./modal//filter.html')
     <!-- @@include('./modal/partner-edit.html') -->
     
     <script src="./js/bundle.js"></script>

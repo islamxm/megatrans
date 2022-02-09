@@ -2,13 +2,17 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 40px;
+    padding: 15px 20px;
     background-color: $blue;
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
     @include default-anim;
     cursor: pointer;
+
+    svg {
+        margin-right: 10px;
+    }
 
     &:hover {
         background-color: #142358;

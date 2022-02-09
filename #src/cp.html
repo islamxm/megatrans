@@ -22,10 +22,16 @@
         <main class="main main-w">
             @@include('./blocks/aside.html')
             <div class="cp" id="cp">
-                <h2 class="cp__title title">Мои партнеры</h2>
+                <h2 class="cp__title title">Мои заявки</h2>
                 <div class="cp__action">
-                    <button class="cp__action_btn button-l">фильтр</button>
-                    <button class="cp__action_btn button">Добавить</button>
+                    <button class="cp__action_btn button-l" data-micromodal-trigger="filterM">фильтр</button>
+                    <button class="cp__action_btn button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 11H13V5H11V11H5V13H11V19H13V13H19V11Z" fill="white"/>
+                            </svg>
+                            
+                        Добавить
+                    </button>
                 </div>
                 <div class="cp__content">
                     <div class="cp__content_top">
@@ -110,7 +116,7 @@
         </main>
     </div>
 
-
+    @@include('./modal/filter.html')
     <!-- @@include('./modal/partner-edit.html') -->
     
     <script src="./js/bundle.js"></script>
