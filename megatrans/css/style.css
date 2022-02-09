@@ -1303,6 +1303,26 @@ body {
 .select {
   width: 100%;
 }
+.select .choices[data-type*=select-one]::after {
+  content: url("../img/select.svg");
+  top: calc(50% - 10px) !important;
+  bottom: unset !important;
+  right: 10px !important;
+  left: unset !important;
+  border: none;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .select .choices {
   width: 100%;
   font-weight: 500;
