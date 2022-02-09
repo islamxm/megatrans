@@ -1,6 +1,7 @@
 .select {
     width: 100%;
 
+    
     .choices {
         width: 100%;
         font-weight: 500;
@@ -10,26 +11,89 @@
         &__inner {
             background-color: #fff;
             border: 2px solid #ECECEC;
+            
         }
 
         &__list {
             // top: calc(100% + 1px);
 
             
+            
+
+            
         }
 
         &__list--dropdown {
+
+            .choices__list {
+                .choices__item {
+                    border-left: 2px solid #ECECEC;
+                    border-right: 2px solid #ECECEC;
+                }
+                .choices__item.is-selected {
+                    background-color: $blue;
+                    color: #fff;
+                    border-left-color: $blue;
+                    border-right-color: $blue;
+                }
+            }
+
+
             .choices__item--selectable {
                 padding: 10px !important;
                 // padding-right: 0;
             }
         }
+
+        
     }
 
     .choices.is-open.is-focused {
 
         .choices__inner {
-            border-color: $blue;
+            // border-color: $blue;
+        }
+    }
+
+    .choices.is-open {
+
+        &:after {
+            display: none;
+        }
+        .choices__inner {
+            // display: none;
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            // z-index: -1;
+            border: none !important;
+        }
+
+        .choices__list--dropdown {
+            top: 0 !important;
+            bottom: unset !important;
+            border: none;
+            // border: 2px solid #ECECEC;
+
+            input {
+                height: 47px;
+                border: 2px solid $blue !important;
+            }
+            .choices__list {
+                
+                border-bottom: 2px solid #ECECEC;
+                
+            }
+        }
+
+        
+    }
+
+    .choices.is-flipped {
+
+        .choices__list--dropdown {
+            top: 0 !important;
+            bottom: unset !important;
         }
     }
 }
