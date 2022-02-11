@@ -87,6 +87,24 @@
                 margin: 0;
             }
         }
+
+        &_item.status_red {
+            button {
+                color: $red;
+            }
+        }
+
+        &_item.status_blue {
+            button {
+                color: $blue;
+            }
+        }
+
+        &_item.status_black {
+            button {
+                color: #000;
+            }
+        }
         
         &_item {
             padding: 16px;
@@ -207,6 +225,6 @@
     }
 
     &__row.orange {
-        border-left: #FFAB49;
+        border-left: 7px solid #FFAB49;
     }
 }

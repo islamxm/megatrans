@@ -271,6 +271,11 @@
                             
                             .table__row_item {
                                 color: #fff !important;
+
+
+                                .name {
+                                    color: #fff;
+                                }
                             }
                         }
 
@@ -303,7 +308,10 @@
                             }
 
                             &:nth-child(4) {
-                                display: none;
+                                // display: none;
+                                order: 4;
+
+                                
                             }
                         }
                     }
