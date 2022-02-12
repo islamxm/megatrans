@@ -9,6 +9,7 @@
     font-weight: 600;
     @include default-anim;
     cursor: pointer;
+    min-height: 54px;
 
     svg {
         margin-right: 10px;
@@ -24,6 +25,7 @@
     justify-content: center;
     align-items: center;
     padding: 14px 39px;
+    min-height: 54px;
     background-color: transparent;
     color: $blue;
     text-transform: uppercase;

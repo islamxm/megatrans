@@ -45,6 +45,21 @@
     }
 }
 
+@media (max-width: 1315px) {
+
+    .dec-new {
+
+        .dec-new__form_info_file {
+
+            a {
+                svg {
+                    &:last-child {}
+                }
+            }
+        }
+    }
+}
+
 
 @media (max-width: 1250px) {
 
@@ -192,6 +207,28 @@
                         margin: 0;
                     }
                 }
+
+                &_file {
+
+                    a {
+                        display: flex;
+                        justify-content: flex-start;
+                        background-color: #fff;
+                        
+
+                        svg {
+                            flex: 0 0 auto;
+
+                            &:first-child {
+                                margin-right: 20px;
+                            }
+
+                            &:last-child {
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                }
             }
 
             &_info.active {
@@ -253,6 +290,12 @@
             }
 
             &_tab {
+
+                .dec-new__ex_btn {
+                    button {
+                        width: 100%;
+                    }
+                }
                 &:nth-child(2) {
 
                     .table__headrow {

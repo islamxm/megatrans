@@ -1,16 +1,13 @@
 .filter {
-
+    overflow-y: auto;
 
     &__content {
         padding-left: 45px;
-        overflow-y: auto;
+        
 
         &_in {
             max-width: 537px;
-            width: 100%;
-            
-
-            
+            width: 100%;            
         }
     }
 }

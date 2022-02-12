@@ -11,9 +11,9 @@
             background-color: #fff !important;
         }
 
-        &:invalid {
-            border-color: $red;
-        }
+        // &:invalid {
+        //     border-color: $red;
+        // }
 
         &:read-only {
             background-color: #ECECEC !important;

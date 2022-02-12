@@ -3,3 +3,10 @@
         width: 600px;
     }
 }
+
+@media (max-width: 800px) {
+
+    .modal {
+        box-shadow: none;
+    }
+}

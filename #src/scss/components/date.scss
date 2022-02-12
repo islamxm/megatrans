@@ -1,10 +1,21 @@
 .date {
-    
-    
         display: flex;
         align-items: center;
         border: 2px solid #ECECEC;
         padding: 10px 20px;
         width: 100%;
+        font-size: 14px;
+        line-height: normal;
     
+}
+
+
+input[type="date"] {
+        display: block;
+        align-items: center;
+        border: 2px solid #ECECEC;
+        padding: 9.5px 20px;
+        width: 100%;
+        font-size: 14px;
+        line-height: normal;
 }

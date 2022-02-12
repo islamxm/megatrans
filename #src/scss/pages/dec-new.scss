@@ -73,7 +73,24 @@
             }
         }
 
+        &_tab.active {
+            .table {
+                display: table;
+            }
+
+            .dec-new__ex_btn {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+            }
+        }
+
         &_tab {
+
+            .dec-new__ex_btn {
+                display: none;
+            }
         }
 
         
@@ -203,7 +220,7 @@
 
                             .ex {
                                 font-size: 14px;
-                                line-height: 25px;
+                                line-height: 20px;
                                 color: $blue;
                                 text-decoration: underline;
                             }
@@ -352,6 +369,32 @@
             
             &_close {
                 display: none;
+            }
+
+            &_file {
+                margin-bottom: 46px;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 15px;
+                    border: 2px solid #ECECEC;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: $blue;
+
+                    span {
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+                    
+                    svg {
+                        flex: 1 0 auto;
+                    }
+
+                    
+                }
             }
 
             &_panel {
