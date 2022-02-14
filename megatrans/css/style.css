@@ -1701,6 +1701,9 @@ body {
 .table__row:hover .table__row_item .name {
   color: #fff;
 }
+.table__row:hover .table__row_item .percent {
+  color: #fff !important;
+}
 .table__row:hover .table__row_item button svg path {
   fill: #fff;
 }
