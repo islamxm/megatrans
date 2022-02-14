@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body >
+    <div class="wrapper">
+        @@include('./blocks/header-menu.html')
+        <main class="main main-w">
+            @@include('./blocks/aside.html')
+            <div class="cp" id="appeal">
+                <h2 class="cp__title title">Мои преференции</h2>
+                <div class="cp__action">
+                    <button class="cp__action_btn button-l" data-micromodal-trigger="filterM">фильтр</button>
+                </div>
+                <div class="cp__content">
+                    <div class="cp__content_head">
+                        <div class="cp__content_head_tabs">
+                            <div class="cp__content_head_tab active" data-tab="true">Перевозка</div>
+                            <div class="cp__content_head_tab" data-tab="true">Дополнительные услуги</div>
+                        </div>
+
+                        <div class="cp__content_head_vw">
+                            <div class="cp__content_head_vw_item active">
+                                <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H30V3.33333H0V0ZM30 11.6667V8.33333H0V11.6667H30ZM30 20V16.6667H0V20H30Z" fill="#1D327B"/>
+                                    </svg>
+                                    
+                            </div>
+                            <div class="cp__content_head_vw_item">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4 0V10.4H0V0H10.4ZM10.4 15.6V26H0V15.6H10.4ZM26 0V10.4H15.6V0H26ZM26 15.6V26H15.6V15.6H26Z" fill="#2D3134"/>
+                                    </svg>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cp__content_body">
+                        <div class="cp__content_body_item">
+                            <div class="prefgrid">
+
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                               
+                                
+                            </div>
+                        </div>
+                        <div class="cp__content_body_item">
+                            <div class="prefgrid">
+
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prefgrid__item">
+                                    <div class="prefgrid__item_hero">
+                                        <div class="sk">
+                                            СКИДКА: 17%
+                                        </div>
+                                        <div class="name">
+                                            САНКТ-ПЕТЕРБУРГ — КАЛИНИНГРАД
+                                        </div>
+                                        <div class="price">
+                                            минимальная цена: <span>2 530 ₽</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_body">
+                                        <div class="item">
+                                            <div class="item__value">1 300 ₽</div>
+                                            <div class="item__name">цена за куб</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item__value">2 000 ₽ </div>
+                                            <div class="item__name">цена за кг</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prefgrid__item_action">
+                                        <button class="prefgrid__item_action_btn">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                               
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    @@include('./modal/filter.html')
+    <!-- @@include('./modal/app-error.html') -->
+    <!-- @@include('./modal/partner-edit.html') -->
+    
+    <script src="./js/bundle.js"></script>
+</body>
+</html>

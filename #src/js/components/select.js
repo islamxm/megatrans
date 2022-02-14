@@ -8,7 +8,9 @@ export function select() {
         selectEls.forEach(select => {
             const choiceWithSearch = new Choices(select, {
                 allowHTML: true,
-                itemSelectText: ''
+                itemSelectText: '',
+                noResultsText: 'Нет результатов',
+                
             });
         });
     }

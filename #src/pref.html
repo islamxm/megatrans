@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body >
+    <div class="wrapper">
+        @@include('./blocks/header-menu.html')
+        <main class="main main-w">
+            @@include('./blocks/aside.html')
+            <div class="cp" id="appeal">
+                <h2 class="cp__title title">Мои преференции</h2>
+                <div class="cp__action">
+                    <button class="cp__action_btn button-l" data-micromodal-trigger="filterM">фильтр</button>
+                </div>
+                <div class="cp__content">
+                    <div class="cp__content_head">
+                        <div class="cp__content_head_tabs">
+                            <div class="cp__content_head_tab active" data-tab="true">Перевозка</div>
+                            <div class="cp__content_head_tab" data-tab="true">Дополнительные услуги</div>
+                        </div>
+
+                        <div class="cp__content_head_vw">
+                            <div class="cp__content_head_vw_item active">
+                                <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H30V3.33333H0V0ZM30 11.6667V8.33333H0V11.6667H30ZM30 20V16.6667H0V20H30Z" fill="#1D327B"/>
+                                    </svg>
+                                    
+                            </div>
+                            <div class="cp__content_head_vw_item">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4 0V10.4H0V0H10.4ZM10.4 15.6V26H0V15.6H10.4ZM26 0V10.4H15.6V0H26ZM26 15.6V26H15.6V15.6H26Z" fill="#2D3134"/>
+                                    </svg>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cp__content_body">
+                        <div class="cp__content_body_item">
+                            <table class="table">
+                                <tr class="table__headrow mob-hide-ex">
+                                    <th class="table__headrow_item mob-hide">
+                                        откуда
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            
+                                    </th>
+                                    <th class="table__headrow_item">
+                                        КУДА
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </th>
+                                    <th class="table__headrow_item mob-hide">
+                                        ЦЕНА ЗА КУБ
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </th>
+                                    <th class="table__headrow_item">
+                                        ЦЕНА ЗА КГ
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </th>
+                                    <th class="table__headrow_item">
+                                        МИНИМАЛЬНАЯ ЦЕНА
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </th>
+                                    <th class="table__headrow_item">
+                                        СКИДКА
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </th>
+                                    <th class="table__headrow_item">
+    
+                                    </th>
+                                </tr>
+    
+                                <tr class="table__row table__row_dropdown" data-micromodal-trigger="appError">
+                                    <td class="table__row_item mob-hide">Lorem, ipsum.</td>
+                                    <td class="table__row_item">
+                                        Lorem, ipsum.
+    
+                                        <div class="table__row_item_mob">
+                                            Lorem, ipsum.
+                                        </div>
+    
+                                        <div class="table__row_item_smob">
+                                            <div class="table__row_item_smob_i">Lorem, ipsum.</div>
+                                            <div class="table__row_item_smob_i">Lorem, ipsum.</div>
+                                        </div>
+    
+                                    </td>
+                                    <td class="table__row_item mob-hide">Lorem, ipsum.</td>
+                                    <td class="table__row_item mob-hide-ex status_red">
+                                        Lorem, ipsum.
+    
+                                        <div class="table__row_item_mob">
+                                            Lorem, ipsum.
+                                        </div>
+                                    </td>
+                                    <td class="table__row_item mob-hide-ex status_red">
+                                        Lorem, ipsum.
+                                        <div class="table__row_item_mob">
+                                            Lorem, ipsum.
+                                        </div>
+                                    </td>
+                                    <td class="table__row_item mob-hide-ex status_red">
+                                        <button class="name percent">
+                                            99%
+                                        </button>
+    
+                                        <div class="table__row_item_mob">
+                                            Lorem, ipsum.
+                                        </div>
+                                    </td>
+                                    
+                                    <td class="table__row_item table__row_item_action">
+                                        <button class="table__row_item_drop" data-table-drop>
+                                            <span data-table-drop></span>
+                                            <span data-table-drop></span>
+                                        </button>
+                                        
+                                        <div class="table__row_item_edit">
+                                            <button>
+                                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                    </svg>
+                                                    
+                                            </button>
+                                        </div>
+    
+                                        
+                                    </td>
+                                </tr>
+    
+                                
+                                
+                            </table>
+                        </div>
+                        <div class="cp__content_body_item">
+                            <table class="table">
+                                <tr class="table__headrow mob-hide-ex">
+                                    <th class="table__headrow_item mob-hide">
+                                        откуда
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            
+                                    </th>
+                                    <th class="table__headrow_item">
+                                        КУДА
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </th>
+                                    <th class="table__headrow_item mob-hide">
+                                        ЦЕНА ЗА КУБ
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </th>
+                                    <th class="table__headrow_item">
+                                        ЦЕНА ЗА КГ
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </th>
+                                    <th class="table__headrow_item">
+                                        МИНИМАЛЬНАЯ ЦЕНА
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </th>
+                                    <th class="table__headrow_item">
+                                        СКИДКА
+                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </th>
+                                    <th class="table__headrow_item">
+    
+                                    </th>
+                                </tr>
+    
+                                <tr class="table__row table__row_dropdown" data-micromodal-trigger="appError">
+                                    <td class="table__row_item mob-hide">Lorem, ipsum.</td>
+                                    <td class="table__row_item">
+                                        Lorem, ipsum.
+    
+                                        <div class="table__row_item_mob">
+                                            Lorem, ipsum.
+                                        </div>
+    
+                                        <div class="table__row_item_smob">
+                                            <div class="table__row_item_smob_i">Lorem, ipsum.</div>
+                                            <div class="table__row_item_smob_i">Lorem, ipsum.</div>
+                                        </div>
+    
+                                    </td>
+                                    <td class="table__row_item mob-hide">Lorem, ipsum.</td>
+                                    <td class="table__row_item mob-hide-ex status_red">
+                                        Lorem, ipsum.
+    
+                                        <div class="table__row_item_mob">
+                                            Lorem, ipsum.
+                                        </div>
+                                    </td>
+                                    <td class="table__row_item mob-hide-ex status_red">
+                                        Lorem, ipsum.
+                                        <div class="table__row_item_mob">
+                                            Lorem, ipsum.
+                                        </div>
+                                    </td>
+                                    <td class="table__row_item mob-hide-ex status_red">
+                                        <button class="name percent">
+                                            99%
+                                        </button>
+    
+                                        <div class="table__row_item_mob">
+                                            Lorem, ipsum.
+                                        </div>
+                                    </td>
+                                    
+                                    <td class="table__row_item table__row_item_action">
+                                        <button class="table__row_item_drop" data-table-drop>
+                                            <span data-table-drop></span>
+                                            <span data-table-drop></span>
+                                        </button>
+                                        
+                                        <div class="table__row_item_edit">
+                                            <button>
+                                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 14.25V11.75H14.4625L11.2375 8.5125L13 6.75L19.25 13L13 19.25L11.2375 17.4875L14.4625 14.25H6.75ZM0.5 13C0.500001 6.09644 6.09644 0.499999 13 0.5C19.9036 0.500001 25.5 6.09644 25.5 13C25.5 19.9036 19.9036 25.5 13 25.5C6.09644 25.5 0.499999 19.9036 0.5 13C0.5 13 0.500001 6.09644 0.5 13ZM3 13C3 7.47715 7.47715 3 13 3C18.5228 3 23 7.47715 23 13C23 18.5228 18.5228 23 13 23C7.47715 23 3 18.5228 3 13C3 13 3 7.47715 3 13Z" fill="#1D327B"/>
+                                                    </svg>
+                                                    
+                                            </button>
+                                        </div>
+    
+                                        
+                                    </td>
+                                </tr>
+    
+                                
+                                
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    @@include('./modal/filter.html')
+    <!-- @@include('./modal/app-error.html') -->
+    <!-- @@include('./modal/partner-edit.html') -->
+    
+    <script src="./js/bundle.js"></script>
+</body>
+</html>

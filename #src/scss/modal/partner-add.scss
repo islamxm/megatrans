@@ -31,6 +31,7 @@
 
     &__content {
         display: flex;
+        overflow-y: auto;
         // justify-content: flex-start;
         padding-left: 45px;
         
@@ -38,7 +39,7 @@
         // padding-top: 100px;
 
         &_in {
-            overflow-y: auto;
+            
             max-width: 537px;
             width: 100%;
             height: 100%;
@@ -117,6 +118,25 @@
                 color: $blue;
                 display: block;
                 text-decoration: underline;
+            }
+
+            .not-ed {
+                width: 100%;
+                padding: 10px 20px;
+                background-color: #ECECEC;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .value  {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                .btn {
+
+                }
             }
         }
 

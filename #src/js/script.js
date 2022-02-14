@@ -12,6 +12,7 @@ import { addFieldGroup } from './components/addFieldGroup';
 import { decMoreInfo } from './components/decMoreInfo';
 import { tableDrop } from './components/tableDrop';
 import { mobMenu } from './components/mobMenu';
+import { tooltip } from './components/tooltip';
 
 document.addEventListener('DOMContentLoaded', () => {
     modals();
@@ -29,6 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
     decMoreInfo();
     tableDrop();
     mobMenu();
+    tooltip();
+
+    tabsFunc('.cp__content', '.cp__content_head_tabs', '.cp__content_head_tab', '.cp__content_body_item');
 });
 
 

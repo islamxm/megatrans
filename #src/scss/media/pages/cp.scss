@@ -31,7 +31,26 @@
                     width: 100%;
                 }
             }
+
+
+            &_head {
+                flex-direction: column;
+
+                &_tabs {
+                    margin-bottom: 15px;
+                }
+
+                &_tab {
+                    width: 50%;
+                }
+
+                &_vw {
+
+                }
+            }
         }
+
+
 
         &__action {
             margin-bottom: 30px;

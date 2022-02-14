@@ -1,0 +1,106 @@
+#fine-uploader-gallery {
+    width: 100%;
+    margin-bottom: 50px;
+    
+    .qq-uploader-selector {
+        background-color: #fff;
+        border: 1px dashed #1D327B;
+        min-height: 125px;
+
+        &:before {
+            font-size: 16px;
+            line-height: 36px;
+            top: calc(50% - 18px);
+            opacity: 1;
+        }
+    }
+
+    .qq-upload-button {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        height: 100%;
+        box-shadow: none;
+        div {
+            display: none;
+        }
+        input {
+            border: none;
+            background-color: transparent;
+            // opacity: 0;
+            // visibility: hidden;
+        }
+    }
+
+
+    .qq-upload-list {
+        display: flex;
+        flex-direction: column;
+        overflow: visible !important;
+        li {
+            display: flex !important;
+            align-items: center;
+            border: 2px solid #ECECEC !important;
+            background-color: transparent !important;
+            box-shadow: none !important;
+            height: auto !important;
+    
+            padding: 15px 20px !important;
+    
+            
+    
+            
+            width: 100%;
+            max-width: unset !important;
+            margin: 0 !important;
+            margin-bottom: 15px !important;
+    
+            .qq-thumbnail-wrapper {
+                height: 25px !important;
+                width: 25px !important;
+                margin-right: 15px;
+
+                img {
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+    
+            .qq-file-info {
+                padding: 0 !important;
+                display: flex !important;
+                align-items: center;
+                margin: 0 !important;
+                // .qq-edit-filename {
+                //     display: none !important;
+                // }
+                color: $blue !important;
+                font-weight: 500 !important;
+
+                .qq-upload-size {
+                    display: none;
+                }
+
+                div {
+                    
+                }
+            }
+    
+    
+            .qq-upload-status-text {
+                display: none !important;
+            }
+    
+            .qq-upload-retry {
+                display: none !important;
+            }
+    
+            .qq-upload-cancel {
+                display: none !important;
+            }
+        }
+    }
+}
