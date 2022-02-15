@@ -9,12 +9,91 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
-/>
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+    />
 
-<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/file-uploader/5.16.2/fine-uploader-gallery.min.css" integrity="sha512-h3AHiH3egxrFZ/Yhs6+g897Y4wCmiXRF5SZtuzuZC0fgDbtrQjb4G0NSVKV8Hd0VdSv5XGtJk9ORs3qVxIS9gg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
     <link rel="stylesheet" href="./css/style.min.css">
+
+    <script type="text/template" id="qq-template-gallery">
+        <div class="qq-uploader-selector qq-uploader qq-gallery" qq-drop-area-text="+ Перетащите файл или выберите с диска">
+            <div class="qq-total-progress-bar-container-selector qq-total-progress-bar-container">
+                <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-total-progress-bar-selector qq-progress-bar qq-total-progress-bar"></div>
+            </div>
+            <div class="qq-upload-drop-area-selector qq-upload-drop-area" qq-hide-dropzone>
+                <span class="qq-upload-drop-area-text-selector"></span>
+            </div>
+            <div class="qq-upload-button-selector qq-upload-button">
+                <div>Upload a file</div>
+            </div>
+            <span class="qq-drop-processing-selector qq-drop-processing">
+                <span>Processing dropped files...</span>
+                <span class="qq-drop-processing-spinner-selector qq-drop-processing-spinner"></span>
+            </span>
+            <ul class="qq-upload-list-selector qq-upload-list" role="region" aria-live="polite" aria-relevant="additions removals">
+                <li>
+                    <span role="status" class="qq-upload-status-text-selector qq-upload-status-text"></span>
+                    <div class="qq-progress-bar-container-selector qq-progress-bar-container">
+                        <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-progress-bar-selector qq-progress-bar"></div>
+                    </div>
+                    <span class="qq-upload-spinner-selector qq-upload-spinner"></span>
+                    <div class="qq-thumbnail-wrapper">
+                        <img class="qq-thumbnail-selector" qq-max-size="120" src="./img/file.png" qq-server-scale>
+                    </div>
+                    <button type="button" class="qq-upload-cancel-selector qq-upload-cancel">X</button>
+                    <button type="button" class="qq-upload-retry-selector qq-upload-retry">
+                        <span class="qq-btn qq-retry-icon" aria-label="Retry"></span>
+                        Retry
+                    </button>
+
+                    <div class="qq-file-info">
+                        <div class="qq-file-name">
+                            <span class="qq-upload-file-selector qq-upload-file"></span>
+                            <span class="qq-edit-filename-icon-selector qq-edit-filename-icon" aria-label="Edit filename"></span>
+                        </div>
+                        <input class="qq-edit-filename-selector qq-edit-filename" tabindex="0" type="text">
+                        <span class="qq-upload-size-selector qq-upload-size"></span>
+                        <button type="button" class="qq-btn qq-upload-delete-selector qq-upload-delete">
+                            <span class="qq-btn qq-delete-icon" aria-label="Delete"></span>
+                        </button>
+                        <button type="button" class="qq-btn qq-upload-pause-selector qq-upload-pause">
+                            <span class="qq-btn qq-pause-icon" aria-label="Pause"></span>
+                        </button>
+                        <button type="button" class="qq-btn qq-upload-continue-selector qq-upload-continue">
+                            <span class="qq-btn qq-continue-icon" aria-label="Continue"></span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+
+            <dialog class="qq-alert-dialog-selector">
+                <div class="qq-dialog-message-selector"></div>
+                <div class="qq-dialog-buttons">
+                    <button type="button" class="qq-cancel-button-selector">Close</button>
+                </div>
+            </dialog>
+
+            <dialog class="qq-confirm-dialog-selector">
+                <div class="qq-dialog-message-selector"></div>
+                <div class="qq-dialog-buttons">
+                    <button type="button" class="qq-cancel-button-selector">No</button>
+                    <button type="button" class="qq-ok-button-selector">Yes</button>
+                </div>
+            </dialog>
+
+            <dialog class="qq-prompt-dialog-selector">
+                <div class="qq-dialog-message-selector"></div>
+                <input type="text">
+                <div class="qq-dialog-buttons">
+                    <button type="button" class="qq-cancel-button-selector">Cancel</button>
+                    <button type="button" class="qq-ok-button-selector">Ok</button>
+                </div>
+            </dialog>
+        </div>
+    </script>
 </head>
 <body >
     <div class="wrapper">
@@ -22,7 +101,7 @@
         <main class="main main-w">
             @@include('./blocks/aside.html')
             <div class="dec-new" id="order-rds">
-                <h2 class="dec-new__title title">Новая заявка</h2>
+                <h2 class="dec-new__title title">Заявки на изменения заказа</h2>
                 <div class="dec-new__action">
                     <button data-micromodal-trigger="filterM" class="button-l">
                         фильтр
@@ -33,101 +112,112 @@
                     
                     <div class="dec-new__content_tab active dec-new__main">
                         <div class="order-item__content">
-                            <table class="table">
-                                <tr class="table__headrow mob-hide-ex">
-                                    <th class="table__headrow_item">
-                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        ДАТА ЗАЯВКИ
-                                    </th>
-                                    <th class="table__headrow_item">
-                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        НОМЕР ЗАКАЗА
-                                    </th>
-                                    <th class="table__headrow_item">
-                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        ГОРОД НАЗНАЧЕНИя
-                                    </th>
-                                    <th class="table__headrow_item mob-hide">
-                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        получатель
-                                    </th>
-                                    <th class="table__headrow_item mob-hide">
-                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        плательщик
-                                    </th>
-                                    <th class="table__headrow_item mob-hide">
-                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        форма оплаты
-                                    </th>
-                                    <th class="table__headrow_item">
-                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        СТАТУС ОБРАЩЕНИЯ
-                                    </th>
-                                </tr>
-                                <tr class="table__row table__row_dropdown">
-                                    <th class="table__row_item">
-                                        Lorem, ipsum.
-                                        <div class="table__row_item_mob">
-                                            Lorem, ipsum.
-                                        </div>
-                                        <div class="table__row_item_smob">
-                                            <div class="table__row_item_smob_i">Lorem, ipsum.</div>
-                                            <div class="table__row_item_smob_i">Lorem, ipsum.</div>
-                                            <div class="table__row_item_smob_i">Lorem, ipsum.</div>
-                                            <div class="table__row_item_smob_i">Lorem, ipsum.</div>
-                                        </div>
-                                    </th>
-                                    <th class="table__row_item mob-hide-ex">
-                                        Lorem, ipsum.
-                                        <div class="table__row_item_mob">
-                                            Lorem, ipsum.
-                                        </div>
-                                    </th>
-                                    <th class="table__row_item mob-hide-ex">
-                                        Lorem, ipsum.
-                                        <div class="table__row_item_mob">
-                                            Lorem, ipsum.
-                                        </div>
-                                    </th>
-                                    <th class="table__row_item mob-hide">
-                                        Lorem, ipsum.
-
-                                    </th>
-                                    <th class="table__row_item mob-hide">
-                                        Lorem, ipsum.
-
-                                    </th>
-                                    <th class="table__row_item mob-hide">
-                                        Lorem, ipsum.
-
-                                    </th>
-                                    <th class="table__row_item table__row_item_action">
-                                        <button class="table__row_item_drop" data-table-drop>
-                                            <span data-table-drop></span>
-                                            <span data-table-drop></span>
-                                        </button>
-                                        <button class="table__row_item_edit name">
-                                            ОБРАБОТАНО
-                                        </button>
-                                    </th>
-                                </tr>
-                                <tr class="spacer"></tr>
-                                
-                            </table>
+                            <div class="tbr active">
+                                <div class="grad-r"></div>
+                            <div class="grad-l"></div>
+                                <div class="table-wr">
+                                    <table class="table">
+                                        <tr class="table__headrow">
+                                            <th class="table__headrow_item">
+                                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                ДАТА ЗАЯВКИ
+                                            </th>
+                                            <th class="table__headrow_item">
+                                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                НОМЕР ЗАКАЗА
+                                            </th>
+                                            <th class="table__headrow_item">
+                                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                ГОРОД НАЗНАЧЕНИя
+                                            </th>
+                                            <th class="table__headrow_item">
+                                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                получатель
+                                            </th>
+                                            <th class="table__headrow_item">
+                                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                плательщик
+                                            </th>
+                                            <th class="table__headrow_item">
+                                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                форма оплаты
+                                            </th>
+                                            <th class="table__headrow_item">
+                                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 1L6.5 6.5L1 1" stroke="#2D3134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                СТАТУС ОБРАЩЕНИЯ
+                                            </th>
+                                        </tr>
+    
+                                        <tr class="table__row">
+                                            <th class="table__row_item">
+                                                25.09.2021
+                                            </th>
+                                            <th class="table__row_item">
+                                                152458695
+                                            </th>
+                                            <th class="table__row_item">
+                                                корректировка
+                                            </th>
+                                            <th class="table__row_item">
+                                                
+                                            </th>
+                                            <th class="table__row_item">
+                                                корректировка
+                                            </th>
+                                            <th class="table__row_item">
+                                                
+                                            </th>
+                                            <th class="table__row_item status_blue">
+                                                <button class="name">
+                                                    ОБРАБОТАНО
+                                                </button>
+                                            </th>
+                                        </tr>
+    
+                                        <tr class="spacer"></tr>
+                                        
+                                        <tr class="table__row">
+                                            <th class="table__row_item">
+                                                25.09.2021
+                                            </th>
+                                            <th class="table__row_item">
+                                                152458695
+                                            </th>
+                                            <th class="table__row_item">
+                                                
+                                            </th>
+                                            <th class="table__row_item">
+                                                корректировка
+                                            </th>
+                                            <th class="table__row_item">
+                                                
+                                            </th>
+                                            <th class="table__row_item">
+                                                корректировка
+                                            </th>
+                                            <th class="table__row_item status_red">
+                                                <button class="name">
+                                                    ОТКАЗАНО
+                                                </button>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                         
 

@@ -1,5 +1,5 @@
 .modal.is-open {
-    
+    box-shadow: 2px 0px 15px 15px rgba(153, 153, 153, 0.55);
     transform: translateX(0);
 
     .modal__content {
@@ -19,7 +19,7 @@
     transform: translateX(100%);
     width: 700px;
     @include default-anim;
-    box-shadow: 2px 0px 15px 15px rgba(153, 153, 153, 0.55);
+    
     
     
 

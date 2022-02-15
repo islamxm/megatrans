@@ -3,7 +3,7 @@ import { FineUploader } from "fine-uploader";
 export function dropFiles() {
     
     const ff = document.querySelectorAll("#fine-uploader-gallery");
-    if(ff.length > 0) {
+    if(ff.length >= 0) {
         ff.forEach(i => {
             var galleryUploader = new FineUploader({
                 element: i,
