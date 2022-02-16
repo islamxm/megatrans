@@ -18,7 +18,11 @@ export function dropFiles() {
                     }
                 },
                 validation: {
-                    allowedExtensions: ['pdf', 'doc', 'txt']
+                    allowedExtensions: ['jpg', 'jpeg', 'png', 'pdf', 'doc']
+                },
+                messages: {
+                    typeError: 'Произошла ошибка. попробуйте еще раз'
+                    // other messages can go here as well ...
                 }
             });
         })
