@@ -27,5 +27,22 @@ export function dropFiles() {
             });
         })
     }
+
+
+    const qqfile = document.querySelector('[name="qqfile"]');
+    const qqfileWrap = document.querySelector('.qq-uploader-selector');
+
+
+    if(qqfile && qqfileWrap) {
+        qqfile.addEventListener('input', () => {
+            if(qqfile.value != null || qqfile.vaue != '') {
+                qqfileWrap.classList.add('active');
+            }
+
+            if(qqfile.value == null || qqfile.value == '') {
+                qqfileWrap.classList.remove('active');
+            }
+        })
+    }
     
 }

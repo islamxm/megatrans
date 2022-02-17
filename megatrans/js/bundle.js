@@ -18,7 +18,7 @@
 /*!*****************************************!*\
   !*** ./#src/js/components/dropFiles.js ***!
   \*****************************************/
-/*! exports provided: dropFiles */function(e,t,n){"use strict";n.r(t),n.d(t,"dropFiles",(function(){return o}));var i=n(/*! fine-uploader */"./node_modules/fine-uploader/lib/traditional.js");function o(){const e=document.querySelectorAll("#fine-uploader-gallery");e.length>=0&&e.forEach(e=>{new i.FineUploader({element:e,template:"qq-template-gallery",request:{endpoint:"/server/uploads"},thumbnails:{placeholders:{}},validation:{allowedExtensions:["jpg","jpeg","png","pdf","doc"]},messages:{typeError:"Произошла ошибка. попробуйте еще раз"}})})}},"./#src/js/components/mobMenu.js":
+/*! exports provided: dropFiles */function(e,t,n){"use strict";n.r(t),n.d(t,"dropFiles",(function(){return o}));var i=n(/*! fine-uploader */"./node_modules/fine-uploader/lib/traditional.js");function o(){const e=document.querySelectorAll("#fine-uploader-gallery");e.length>=0&&e.forEach(e=>{new i.FineUploader({element:e,template:"qq-template-gallery",request:{endpoint:"/server/uploads"},thumbnails:{placeholders:{}},validation:{allowedExtensions:["jpg","jpeg","png","pdf","doc"]},messages:{typeError:"Произошла ошибка. попробуйте еще раз"}})});const t=document.querySelector('[name="qqfile"]'),n=document.querySelector(".qq-uploader-selector");t&&n&&t.addEventListener("input",()=>{null==t.value&&""==t.vaue||n.classList.add("active"),null!=t.value&&""!=t.value||n.classList.remove("active")})}},"./#src/js/components/mobMenu.js":
 /*!***************************************!*\
   !*** ./#src/js/components/mobMenu.js ***!
   \***************************************/

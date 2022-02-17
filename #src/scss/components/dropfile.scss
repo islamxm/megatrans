@@ -8,7 +8,9 @@
     //     background-color: #1D327B;
     //     color: #fff;
     // }
-    
+    .qq-uploader-selector.active {
+        border: none;
+    }
     .qq-uploader-selector {
         background-color: #fff;
         border: 1px dashed #1D327B;
@@ -75,12 +77,17 @@
                     width: 24px;
                 }
             }
+
+            .edit_mg {
+                justify-self: flex-end;
+            }
     
             .qq-file-info {
                 padding: 0 !important;
                 display: flex !important;
                 align-items: center;
                 margin: 0 !important;
+                flex: 1 0 auto;
                 // .qq-edit-filename {
                 //     display: none !important;
                 // }
