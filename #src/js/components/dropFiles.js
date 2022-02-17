@@ -1,7 +1,7 @@
 import { FineUploader } from "fine-uploader";
 
 export function dropFiles() {
-    
+
     const ff = document.querySelectorAll("#fine-uploader-gallery");
     if(ff.length >= 0) {
         ff.forEach(i => {
@@ -21,28 +21,26 @@ export function dropFiles() {
                     allowedExtensions: ['jpg', 'jpeg', 'png', 'pdf', 'doc']
                 },
                 messages: {
-                    typeError: 'Произошла ошибка. попробуйте еще раз'
+                    typeError: 'Произошла ошибка!'
                     // other messages can go here as well ...
+                },
+                
+                
+                multiple: false,
+                callbacks: {
+                    onComplete: function() {
+                        let wr = document.querySelector('.qq-uploader-selector');
+                        wr.classList.add('active');
+                    }
                 }
             });
         })
     }
 
+    
+    
 
-    const qqfile = document.querySelector('[name="qqfile"]');
-    const qqfileWrap = document.querySelector('.qq-uploader-selector');
 
-
-    if(qqfile && qqfileWrap) {
-        qqfile.addEventListener('input', () => {
-            if(qqfile.value != null || qqfile.vaue != '') {
-                qqfileWrap.classList.add('active');
-            }
-
-            if(qqfile.value == null || qqfile.value == '') {
-                qqfileWrap.classList.remove('active');
-            }
-        })
-    }
+    
     
 }

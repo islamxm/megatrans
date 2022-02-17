@@ -1,5 +1,26 @@
-.input {
+.input.error {
 
+    input {
+        border-color: $red;
+    }
+
+    .message {
+        display: block;
+    }
+}
+
+.input {
+    position: relative;
+
+    .message {
+        display: none;
+        position: absolute;
+        bottom: -22px;
+        font-size: 16px;
+        line-height: 18px;
+        color: $red;
+        left: 0;
+    }
     input, select {
         padding: 11px 14px;
         display: block;
@@ -13,6 +34,8 @@
 
         // &:invalid {
         //     border-color: $red;
+        //     position: relative;
+            
         // }
 
         &:read-only {

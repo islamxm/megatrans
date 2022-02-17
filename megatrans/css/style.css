@@ -1251,6 +1251,25 @@ body {
   background-color: #1D327B;
 }
 
+.input.error input {
+  border-color: #E30613;
+}
+.input.error .message {
+  display: block;
+}
+
+.input {
+  position: relative;
+}
+.input .message {
+  display: none;
+  position: absolute;
+  bottom: -22px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #E30613;
+  left: 0;
+}
 .input input, .input select {
   padding: 11px 14px;
   display: block;
@@ -2229,7 +2248,7 @@ input[type=date] {
   margin-bottom: 50px;
 }
 #fine-uploader-gallery .qq-uploader-selector.active {
-  border: none;
+  border: none !important;
 }
 #fine-uploader-gallery .qq-uploader-selector {
   background-color: #fff;
@@ -2241,6 +2260,61 @@ input[type=date] {
   line-height: 36px;
   top: calc(50% - 18px);
   opacity: 1;
+}
+#fine-uploader-gallery .qq-alert-dialog-selector[open] {
+  border: none !important;
+  top: calc(50% - 100px);
+  left: calc(50% - 150px);
+  width: 300px;
+  height: 200px;
+  max-width: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#fine-uploader-gallery .qq-alert-dialog-selector[open] .qq-dialog-message-selector {
+  padding: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 600;
+  text-align: center;
+}
+#fine-uploader-gallery .qq-alert-dialog-selector[open] .qq-dialog-buttons {
+  margin-top: 25px;
+  background-color: #1D327B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+#fine-uploader-gallery .qq-alert-dialog-selector[open] .qq-dialog-buttons button {
+  text-transform: uppercase !important;
+  padding: 15px 60px !important;
+  color: #fff;
+  font-weight: 600;
 }
 #fine-uploader-gallery .qq-upload-button {
   position: absolute !important;
@@ -2317,6 +2391,9 @@ input[type=date] {
 }
 #fine-uploader-gallery .qq-upload-list li .qq-file-info .qq-upload-size {
   display: none;
+}
+#fine-uploader-gallery .qq-upload-list li .qq-file-info .qq-upload-file {
+  margin: 0;
 }
 #fine-uploader-gallery .qq-upload-list li .qq-upload-status-text {
   display: none !important;

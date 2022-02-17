@@ -9,7 +9,7 @@
     //     color: #fff;
     // }
     .qq-uploader-selector.active {
-        border: none;
+        border: none !important;
     }
     .qq-uploader-selector {
         background-color: #fff;
@@ -23,6 +23,52 @@
             opacity: 1;
         }
     }
+
+    .qq-alert-dialog-selector[open] {
+        border: none !important;
+        
+        top: calc(50% - 100px);
+        left: calc(50% - 150px);
+        width: 300px;
+        height: 200px;
+        max-width: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .qq-dialog-message-selector {
+            padding: 20px 10px;
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 600;
+            text-align: center;
+            
+        }
+
+        .qq-dialog-buttons {
+            margin-top: 25px;
+            background-color: $blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            
+            button {
+                text-transform: uppercase !important;
+                padding: 15px 60px !important;
+                color: #fff;
+                font-weight: 600;
+
+            }
+
+        }
+    }
+
 
     .qq-upload-button {
         position: absolute !important;
@@ -97,7 +143,9 @@
                 .qq-upload-size {
                     display: none;
                 }
-
+                .qq-upload-file {
+                    margin: 0;
+                }
                 div {
                     
                 }
