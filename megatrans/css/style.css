@@ -1252,7 +1252,7 @@ body {
 }
 
 .input.error input {
-  border-color: #E30613;
+  border-color: #E30613 !important;
 }
 .input.error .message {
   display: block;
@@ -1472,8 +1472,25 @@ body {
   content: url("../img/radio-ch.svg");
 }
 
+.select.error .choices__inner {
+  border-color: #E30613 !important;
+}
+.select.error .message {
+  display: block;
+}
+
 .select {
   width: 100%;
+  position: relative;
+}
+.select .message {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  line-height: 18px;
+  color: #E30613;
+  left: 0;
 }
 .select .choices[data-type*=select-one]::after {
   content: url("../img/select.svg");
@@ -1864,17 +1881,23 @@ body {
 }
 
 .date {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 2px solid #ECECEC;
-  padding: 10px 20px;
-  width: 100%;
-  font-size: 14px;
-  line-height: normal;
+  position: relative;
+}
+.date .message {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  line-height: 18px;
+  color: #E30613;
+  left: 0;
+}
+
+.date.error input {
+  border-color: #E30613 !important;
+}
+.date.error .message {
+  display: block;
 }
 
 input[type=date] {

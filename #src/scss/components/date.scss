@@ -1,13 +1,27 @@
 .date {
-        display: flex;
-        align-items: center;
-        border: 2px solid #ECECEC;
-        padding: 10px 20px;
-        width: 100%;
-        font-size: 14px;
-        line-height: normal;
+        position: relative;
+        .message {
+                display: none;
+                position: absolute;
+                bottom: 0;
+                font-size: 16px;
+                line-height: 18px;
+                color: $red;
+                left: 0;
+            }
     
 }
+
+.date.error {
+        input {
+                border-color: $red !important;
+            }
+        
+        .message {
+                display: block;
+        }
+}
+
 
 
 input[type="date"] {
