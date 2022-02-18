@@ -112,6 +112,18 @@
             max-width: unset !important;
             margin: 0 !important;
             margin-bottom: 15px !important;
+
+
+            .qq-btn.qq-upload-cancel-selector.qq-upload-cancel {
+                display: block !important;
+                background-color: transparent !important;
+                // top: calc(50% - 10px);
+                // right: 10px;
+                padding: 0;
+                position: static !important;
+                order: 3;
+
+            }
     
             .qq-thumbnail-wrapper {
                 height: 25px !important;
@@ -124,9 +136,9 @@
                 }
             }
 
-            .edit_mg {
-                justify-self: flex-end;
-            }
+            // .edit_mg {
+            //     justify-self: flex-end;
+            // }
     
             .qq-file-info {
                 padding: 0 !important;

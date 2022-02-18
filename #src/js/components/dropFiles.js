@@ -8,9 +8,9 @@ export function dropFiles() {
             var galleryUploader = new FineUploader({
                 element: i,
                 template: 'qq-template-gallery',
-                request: {
-                    endpoint: '/server/uploads'
-                },
+                // request: {
+                //     endpoint: '/server/uploads'
+                // },
                 thumbnails: {
                     placeholders: {
                         // waitingPath: '/source/placeholders/waiting-generic.png',
@@ -27,10 +27,22 @@ export function dropFiles() {
                 
                 
                 multiple: false,
+                deleteFile: {
+                    enabled: true,
+                    forceConfirm: true,
+                    endpoint: 'server/file'
+                },
                 callbacks: {
                     onComplete: function() {
                         let wr = document.querySelector('.qq-uploader-selector');
                         wr.classList.add('active');
+                    },
+                    onCancel: function() {
+                        let wr = document.querySelector('.qq-uploader-selector');
+                        let text = document.querySelector('.qq-uploader-selector');
+                        wr.classList.remove('active');
+                        // text.style.display = 'block';
+                        text.setAttribute('qq-drop-area-text', '+ Перетащите файл или выберите с диска');
                     }
                 }
             });

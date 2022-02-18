@@ -2385,6 +2385,15 @@ input[type=date] {
   margin: 0 !important;
   margin-bottom: 15px !important;
 }
+#fine-uploader-gallery .qq-upload-list li .qq-btn.qq-upload-cancel-selector.qq-upload-cancel {
+  display: block !important;
+  background-color: transparent !important;
+  padding: 0;
+  position: static !important;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
 #fine-uploader-gallery .qq-upload-list li .qq-thumbnail-wrapper {
   height: 25px !important;
   width: 25px !important;
@@ -2393,9 +2402,6 @@ input[type=date] {
 #fine-uploader-gallery .qq-upload-list li .qq-thumbnail-wrapper img {
   height: 24px;
   width: 24px;
-}
-#fine-uploader-gallery .qq-upload-list li .edit_mg {
-  justify-self: flex-end;
 }
 #fine-uploader-gallery .qq-upload-list li .qq-file-info {
   padding: 0 !important;
